@@ -66,3 +66,79 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 19, ../sass/screen.scss */
+.header {
+  outline: 1px solid red;
+  position: relative;
+  background: #E9EDF0;
+  border-bottom: 3px solid #dae1e6;
+}
+
+/* line 26, ../sass/screen.scss */
+.nav {
+  outline: 1px solid red;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+/* line 32, ../sass/screen.scss */
+.nav__item {
+  display: inline-block;
+  border-left: 2px solid white;
+}
+/* line 36, ../sass/screen.scss */
+.nav__item:last-of-type {
+  border-right: 2px solid white;
+}
+/* line 40, ../sass/screen.scss */
+.nav__link {
+  padding: 15px 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'Neucha', cursive;
+  display: inline-block;
+  color: black;
+}
+/* line 48, ../sass/screen.scss */
+.nav__link:hover {
+  background-color: #dae1e6;
+}
+
+/* line 53, ../sass/screen.scss */
+.lang-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: 1px solid red;
+}
+/* line 62, ../sass/screen.scss */
+.lang-switch__ua, .lang-switch__ru {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 66, ../sass/screen.scss */
+.lang-switch__ua-link, .lang-switch__ru-link {
+  width: 30px;
+  height: 30px;
+  background: url("../img/ua-ico.png") no-repeat;
+  display: block;
+}
+/* line 76, ../sass/screen.scss */
+.lang-switch__ru-link {
+  background: url("../img/rus-ico.png") no-repeat;
+}
+/* line 81, ../sass/screen.scss */
+.lang-switch__text a {
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}

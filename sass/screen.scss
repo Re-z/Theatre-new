@@ -4,3 +4,84 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+//declare variables
+$headerBg: #E9EDF0;
+$headerBorder: darken($headerBg, 5%);
+// declare mixins
+@mixin out {
+  outline: 1px solid red;
+}
+@mixin mainFont {
+  font-family: 'Neucha', cursive;
+}
+
+.header {
+  @include out;
+  position: relative;
+  background: $headerBg;
+  border-bottom: 3px solid $headerBorder;
+
+}
+.nav {
+  @include out;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    border-left: 2px solid white;
+
+    &:last-of-type {
+      border-right: 2px solid white;
+    }
+  }
+  &__link {
+    padding: 15px 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 19px;
+    @include mainFont;
+    display: inline-block;
+    color: black;
+    &:hover {
+      background-color: $headerBorder;
+    }
+  }
+}
+.lang-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;//mbd
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @include out;
+  &__ua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-link {
+      width: 30px;
+      height: 30px;
+      background: url("../img/ua-ico.png")no-repeat;
+      display: block;
+    }
+
+  }
+  &__ru {
+    @extend .lang-switch__ua;
+    &-link {
+      @extend .lang-switch__ua-link;
+      background: url("../img/rus-ico.png")no-repeat;
+    }
+  }
+  &__text a {
+    @include mainFont;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+}
