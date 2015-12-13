@@ -151,55 +151,47 @@ body {
   margin-top: 30px;
 }
 
-/* line 98, ../sass/screen.scss */
-.contacts {
-  outline: 1px solid red;
-}
-/* line 100, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .contacts-box {
-  outline: 1px solid red;
   width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .tel {
-  outline: 1px solid red;
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 114, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .tel__ico {
   width: 30px;
   height: 30px;
   background: url("../img/tel.png");
 }
-/* line 119, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .tel__number {
   color: #6EB64A;
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .logo {
-  outline: 1px solid red;
   width: 98px;
   height: 100px;
   background: url("../img/logo-main.png");
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .feedback {
-  outline: 1px solid blue;
   display: flex;
   align-items: center;
 }
-/* line 136, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .feedback__btn {
   width: 160px;
   height: 35px;
@@ -208,11 +200,11 @@ body {
   background: #6EB64A;
   border-radius: 20px;
 }
-/* line 143, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .feedback__btn:focus {
   outline: none;
 }
-/* line 146, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .feedback__btn:hover {
   cursor: pointer;
 }
