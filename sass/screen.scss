@@ -32,7 +32,6 @@ body {
 
 }
 .nav {
-  margin: 0 auto;
   list-style: none;
   text-align: center;
   font-size: 0;
@@ -142,5 +141,41 @@ body {
       cursor: pointer;
     }
   }
+}
+.actual {
+  margin-top: 30px;
+  height: 500px;//mbd
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 1024px;
+  }
+  &__article {
+    width: 32%;
+    border: 1px solid;
+    &-img {
+      margin: 0 auto;
+      max-width: 100%;
+      display: block;
+    }
+    &-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    &-text {
+      font-size: 19px;
+      padding: 0 15px 10px 15px;
+    }
+  }
+
 
 }

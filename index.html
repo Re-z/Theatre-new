@@ -8,7 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/owl.theme.css"/>
-    <link rel="stylesheet" href="css/owl.transitions.css"/>
     <style>
         #owl-demo .item{
             margin: 3px;
@@ -42,47 +41,64 @@
         </div>
     </div>
 </header>
-
-<h1 class="main-title"><strong>Киевский театр "Вояж-Престиж"</strong></h1><!--есть ли смысл оборачивать в стронг?-->
-
-<div class="contacts">
-    <div class="contacts-box">
-        <div class="tel">
-            <div class="tel__ico"></div>
-            <div class="tel__numbers">
-                <p class="tel__number">(095) 429-81-74</p>
-                <p class="tel__number">(095) 068-36-38</p>
+<main>
+    <h1 class="main-title"><strong>Киевский театр "Вояж-Престиж"</strong></h1><!--есть ли смысл оборачивать в стронг?-->
+    <div class="contacts">
+        <div class="contacts-box">
+            <div class="tel">
+                <div class="tel__ico"></div>
+                <div class="tel__numbers">
+                    <p class="tel__number">(095) 429-81-74</p>
+                    <p class="tel__number">(095) 068-36-38</p>
+                </div>
+            </div>
+            <div class="logo"></div>
+            <div class="feedback">
+                <button class="feedback__btn">Обратная связь</button>
             </div>
         </div>
-        <div class="logo"></div>
-        <div class="feedback">
-            <button class="feedback__btn">Обратная связь</button>
-        </div>
     </div>
-</div>
 
-<div id="owl-demo">
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
-    <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+    <!--SLIDER-->
+    <div id="owl-demo">
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+        <div class="item"><img src="img/img1.png" alt="Owl Image"></div>
+    </div>
+    <!-- END SLIDER-->
+<section class="actual">
+    <h2 class="actual__title">Актуальные представления</h2>
 
+    <div class="actual__inner">
+        <article class="actual__article">
+            <img class="actual__article-img" src="img/actual.jpg" alt=""/>
+            <h3 class="actual__article-title">Название представления</h3>
+            <p class="actual__article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur doloremque ducimus ex, fugit obcaecati recusandae unde? Accusamus animi atque autem commodi consectetur cupiditate debitis distinctio dolor doloribus eos facilis harum hic id impedit iure labore laborum laudantium magnam molestiae nihil odio possimus provident quisquam rem similique, sint sunt temporibus.</p>
+        </article>
 
+        <article class="actual__article">
+            <img class="actual__article-img" src="img/actual.jpg" alt=""/>
+            <h3 class="actual__article-title">Название представления</h3>
+            <p class="actual__article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur doloremque ducimus ex, fugit obcaecati recusandae unde? Accusamus animi atque autem commodi consectetur cupiditate debitis distinctio dolor doloribus eos facilis harum hic id impedit iure labore laborum laudantium magnam molestiae nihil odio possimus provident quisquam rem similique, sint sunt temporibus.</p>
+        </article>
 
-</div>
+        <article class="actual__article">
+            <img class="actual__article-img" src="img/actual.jpg" alt=""/>
+            <h3 class="actual__article-title">Название представления</h3>
+            <p class="actual__article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur doloremque ducimus ex, fugit obcaecati recusandae unde? Accusamus animi atque autem commodi consectetur cupiditate debitis distinctio dolor doloribus eos facilis harum hic id impedit iure labore laborum laudantium magnam molestiae nihil odio possimus provident quisquam rem similique, sint sunt temporibus.</p>
+        </article>
+    </div>
 
+</section>
 
-
-
-
-
-
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script>
@@ -92,9 +108,13 @@
 
             autoPlay: 3000, //Set AutoPlay to 3 seconds
 
-            items : 5,
-            itemsDesktop : [1199,5],
-            itemsDesktopSmall : [979,3]
+            items : 4,
+            itemsDesktop : [1200,3],
+            itemsDesktopSmall : [1024,3],
+            navigation : true,
+            navigationText : false,
+            pagination: false,
+            slideSpeed: 700
 
         });
     });
