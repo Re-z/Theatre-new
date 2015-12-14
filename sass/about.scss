@@ -1,0 +1,85 @@
+@import "compass/reset";
+
+//declare variables
+$headerBg: #E9EDF0;
+$footerBg: #E9EDF0;
+$headerBorder: darken($headerBg, 5%);
+$mainColor: #787697;
+// declare mixins
+@mixin out {
+  outline: 1px solid red;
+}
+@mixin out2 {
+  outline: 1px solid blue;
+}
+@mixin out3 {
+  outline: 1px solid black;
+}
+@mixin mainFont {
+  font-family: 'Neucha', cursive;
+}
+body {
+  @include mainFont;
+  background: url("../img/WhiteBg1.jpg") repeat;
+}
+.header {
+  position: relative;
+  background: $headerBg;
+  border-bottom: 3px solid $headerBorder;
+}
+.nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    border-left: 2px solid white;
+
+    &:last-of-type {
+      border-right: 2px solid white;
+    }
+  }
+  &__link {
+    padding: 15px 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline-block;
+    color: black;
+    &:hover {
+      background-color: $headerBorder;
+    }
+  }
+}
+.lang-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;//mbd
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  &__ua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-link {
+      width: 30px;
+      height: 30px;
+      background: url("../img/ua-ico.png")no-repeat;
+      display: block;
+    }
+  }
+  &__ru {
+    @extend .lang-switch__ua;
+    &-link {
+      @extend .lang-switch__ua-link;
+      background: url("../img/rus-ico.png")no-repeat;
+    }
+  }
+  &__text a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+}

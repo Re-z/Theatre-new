@@ -1,0 +1,140 @@
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../sass/about.scss */
+body {
+  font-family: 'Neucha', cursive;
+  background: url("../img/WhiteBg1.jpg") repeat;
+}
+
+/* line 25, ../sass/about.scss */
+.header {
+  position: relative;
+  background: #E9EDF0;
+  border-bottom: 3px solid #dae1e6;
+}
+
+/* line 30, ../sass/about.scss */
+.nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+/* line 34, ../sass/about.scss */
+.nav__item {
+  display: inline-block;
+  border-left: 2px solid white;
+}
+/* line 38, ../sass/about.scss */
+.nav__item:last-of-type {
+  border-right: 2px solid white;
+}
+/* line 42, ../sass/about.scss */
+.nav__link {
+  padding: 15px 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 19px;
+  display: inline-block;
+  color: black;
+}
+/* line 49, ../sass/about.scss */
+.nav__link:hover {
+  background-color: #dae1e6;
+}
+
+/* line 54, ../sass/about.scss */
+.lang-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 62, ../sass/about.scss */
+.lang-switch__ua, .lang-switch__ru {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 66, ../sass/about.scss */
+.lang-switch__ua-link, .lang-switch__ru-link {
+  width: 30px;
+  height: 30px;
+  background: url("../img/ua-ico.png") no-repeat;
+  display: block;
+}
+/* line 75, ../sass/about.scss */
+.lang-switch__ru-link {
+  background: url("../img/rus-ico.png") no-repeat;
+}
+/* line 80, ../sass/about.scss */
+.lang-switch__text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}

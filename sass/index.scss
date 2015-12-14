@@ -4,10 +4,6 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@font-face {
-  font-family: 'Kremlin';
-  src: url('../fonts/Kremlin.ttf')
-}
 
 //declare variables
 $headerBg: #E9EDF0;
@@ -35,7 +31,6 @@ body {
   position: relative;
   background: $headerBg;
   border-bottom: 3px solid $headerBorder;
-
 }
 .nav {
   list-style: none;
@@ -79,7 +74,6 @@ body {
       background: url("../img/ua-ico.png")no-repeat;
       display: block;
     }
-
   }
   &__ru {
     @extend .lang-switch__ua;

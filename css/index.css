@@ -67,39 +67,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@font-face {
-  font-family: 'Kremlin';
-  src: url("../fonts/Kremlin.ttf");
-}
-/* line 30, ../sass/screen.scss */
+/* line 26, ../sass/index.scss */
 body {
   font-family: 'Neucha', cursive;
   background: url("../img/WhiteBg1.jpg") repeat;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 30, ../sass/index.scss */
 .header {
   position: relative;
   background: #E9EDF0;
   border-bottom: 3px solid #dae1e6;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 35, ../sass/index.scss */
 .nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 44, ../sass/screen.scss */
+/* line 39, ../sass/index.scss */
 .nav__item {
   display: inline-block;
   border-left: 2px solid white;
 }
-/* line 48, ../sass/screen.scss */
+/* line 43, ../sass/index.scss */
 .nav__item:last-of-type {
   border-right: 2px solid white;
 }
-/* line 52, ../sass/screen.scss */
+/* line 47, ../sass/index.scss */
 .nav__link {
   padding: 15px 40px;
   box-sizing: border-box;
@@ -108,12 +104,12 @@ body {
   display: inline-block;
   color: black;
 }
-/* line 59, ../sass/screen.scss */
+/* line 54, ../sass/index.scss */
 .nav__link:hover {
   background-color: #dae1e6;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 59, ../sass/index.scss */
 .lang-switch {
   display: flex;
   justify-content: space-between;
@@ -123,31 +119,31 @@ body {
   right: 0;
   top: 0;
 }
-/* line 72, ../sass/screen.scss */
+/* line 67, ../sass/index.scss */
 .lang-switch__ua, .lang-switch__ru {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 76, ../sass/screen.scss */
+/* line 71, ../sass/index.scss */
 .lang-switch__ua-link, .lang-switch__ru-link {
   width: 30px;
   height: 30px;
   background: url("../img/ua-ico.png") no-repeat;
   display: block;
 }
-/* line 86, ../sass/screen.scss */
+/* line 80, ../sass/index.scss */
 .lang-switch__ru-link {
   background: url("../img/rus-ico.png") no-repeat;
 }
-/* line 91, ../sass/screen.scss */
+/* line 85, ../sass/index.scss */
 .lang-switch__text a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 91, ../sass/index.scss */
 .logo {
   width: 200px;
   height: 219px;
@@ -155,18 +151,18 @@ body {
   margin: 0 auto;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 97, ../sass/index.scss */
 .main-title {
   font-size: 50px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 102, ../sass/index.scss */
 .contacts {
   margin-top: 25px;
 }
-/* line 110, ../sass/screen.scss */
+/* line 104, ../sass/index.scss */
 .contacts-box {
   width: 1024px;
   margin: 0 auto;
@@ -175,31 +171,31 @@ body {
   align-items: center;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 112, ../sass/index.scss */
 .tel {
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 123, ../sass/screen.scss */
+/* line 117, ../sass/index.scss */
 .tel__ico {
   width: 30px;
   height: 30px;
   background: url("../img/tel.png");
 }
-/* line 128, ../sass/screen.scss */
+/* line 122, ../sass/index.scss */
 .tel__number {
   color: #6EB64A;
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 129, ../sass/index.scss */
 .feedback {
   padding-right: 20px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 131, ../sass/index.scss */
 .feedback__btn {
   width: 160px;
   height: 35px;
@@ -208,58 +204,58 @@ body {
   background: #6EB64A;
   border-radius: 20px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 138, ../sass/index.scss */
 .feedback__btn:focus {
   outline: none;
 }
-/* line 147, ../sass/screen.scss */
+/* line 141, ../sass/index.scss */
 .feedback__btn:hover {
   cursor: pointer;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 146, ../sass/index.scss */
 .actual {
   margin-top: 30px;
 }
-/* line 154, ../sass/screen.scss */
+/* line 148, ../sass/index.scss */
 .actual__title {
   font-size: 25px;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
 }
-/* line 160, ../sass/screen.scss */
+/* line 154, ../sass/index.scss */
 .actual__inner {
   display: flex;
   justify-content: space-between;
   margin: 20px auto 0 auto;
   width: 1024px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 160, ../sass/index.scss */
 .actual__article {
   width: 32%;
   border: 1px solid;
 }
-/* line 169, ../sass/screen.scss */
+/* line 163, ../sass/index.scss */
 .actual__article-img {
   margin: 0 auto;
   max-width: 100%;
   display: block;
 }
-/* line 174, ../sass/screen.scss */
+/* line 168, ../sass/index.scss */
 .actual__article-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   margin: 10px 0;
 }
-/* line 180, ../sass/screen.scss */
+/* line 174, ../sass/index.scss */
 .actual__article-text {
   font-size: 19px;
   padding: 0 15px 10px 15px;
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 180, ../sass/index.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -268,33 +264,33 @@ body {
   padding-top: 18px;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 187, ../sass/index.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 197, ../sass/screen.scss */
+/* line 191, ../sass/index.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 202, ../sass/screen.scss */
+/* line 196, ../sass/index.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 202, ../sass/index.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 213, ../sass/screen.scss */
+/* line 207, ../sass/index.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;

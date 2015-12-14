@@ -76,3 +76,12 @@
 	min-height: 150px;
 	background: url(../img/AjaxLoader.gif) no-repeat center center
 }
+
+#owl-demo .item{
+	margin: 3px;
+}
+#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
