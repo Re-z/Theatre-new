@@ -67,34 +67,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 25, ../sass/screen.scss */
+@font-face {
+  font-family: 'Kremlin';
+  src: url("../fonts/Kremlin.ttf");
+}
+/* line 30, ../sass/screen.scss */
 body {
   font-family: 'Neucha', cursive;
+  background: url("../img/WhiteBg1.jpg") repeat;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .header {
   position: relative;
   background: #E9EDF0;
   border-bottom: 3px solid #dae1e6;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 38, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .nav__item {
   display: inline-block;
   border-left: 2px solid white;
 }
-/* line 42, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .nav__item:last-of-type {
   border-right: 2px solid white;
 }
-/* line 46, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .nav__link {
   padding: 15px 40px;
   box-sizing: border-box;
@@ -103,12 +108,12 @@ body {
   display: inline-block;
   color: black;
 }
-/* line 53, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .nav__link:hover {
   background-color: #dae1e6;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .lang-switch {
   display: flex;
   justify-content: space-between;
@@ -118,79 +123,83 @@ body {
   right: 0;
   top: 0;
 }
-/* line 66, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .lang-switch__ua, .lang-switch__ru {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 70, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .lang-switch__ua-link, .lang-switch__ru-link {
   width: 30px;
   height: 30px;
   background: url("../img/ua-ico.png") no-repeat;
   display: block;
 }
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .lang-switch__ru-link {
   background: url("../img/rus-ico.png") no-repeat;
 }
-/* line 85, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .lang-switch__text a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
 
-/* line 91, ../sass/screen.scss */
-.main-title {
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 30px;
+/* line 97, ../sass/screen.scss */
+.logo {
+  width: 200px;
+  height: 219px;
+  background: url("../img/logo-main.png");
+  margin: 0 auto;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 108, ../sass/screen.scss */
+.contacts {
+  margin-top: 25px;
+}
+/* line 110, ../sass/screen.scss */
 .contacts-box {
   width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .tel {
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 110, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .tel__ico {
   width: 30px;
   height: 30px;
   background: url("../img/tel.png");
 }
-/* line 115, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .tel__number {
   color: #6EB64A;
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 121, ../sass/screen.scss */
-.logo {
-  width: 98px;
-  height: 100px;
-  background: url("../img/logo-main.png");
-}
-
-/* line 126, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .feedback {
-  display: flex;
-  align-items: center;
+  padding-right: 20px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .feedback__btn {
   width: 160px;
   height: 35px;
@@ -199,54 +208,95 @@ body {
   background: #6EB64A;
   border-radius: 20px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .feedback__btn:focus {
   outline: none;
 }
-/* line 140, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .feedback__btn:hover {
   cursor: pointer;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .actual {
   margin-top: 30px;
-  height: 500px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .actual__title {
   font-size: 25px;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
 }
-/* line 154, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .actual__inner {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   width: 1024px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .actual__article {
   width: 32%;
   border: 1px solid;
 }
-/* line 163, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .actual__article-img {
   margin: 0 auto;
   max-width: 100%;
   display: block;
 }
-/* line 168, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .actual__article-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   margin: 10px 0;
 }
-/* line 174, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .actual__article-text {
   font-size: 19px;
   padding: 0 15px 10px 15px;
+}
+
+/* line 186, ../sass/screen.scss */
+.main-footer {
+  background: #E9EDF0;
+  border-top: 3px solid #dae1e6;
+  height: 70px;
+  margin-top: 40px;
+  padding-top: 18px;
+}
+
+/* line 193, ../sass/screen.scss */
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+/* line 197, ../sass/screen.scss */
+.footer-nav__item {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+}
+/* line 202, ../sass/screen.scss */
+.footer-nav__link {
+  font-size: 16px;
+  color: black;
+  text-transform: lowercase;
+}
+
+/* line 208, ../sass/screen.scss */
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+/* line 213, ../sass/screen.scss */
+.copyrights__img {
+  background-image: url("../img/logo-small.png");
+  width: 33px;
+  height: 29px;
 }

@@ -4,9 +4,14 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@font-face {
+  font-family: 'Kremlin';
+  src: url('../fonts/Kremlin.ttf')
+}
 
 //declare variables
 $headerBg: #E9EDF0;
+$footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #6EB64A;
 // declare mixins
@@ -24,6 +29,7 @@ $mainColor: #6EB64A;
 }
 body {
   @include mainFont;
+  background: url("../img/WhiteBg1.jpg") repeat;
 }
 .header {
   position: relative;
@@ -88,18 +94,25 @@ body {
     text-transform: uppercase;
   }
 }
+.logo {
+  width: 200px;
+  height: 219px;
+  background: url("../img/logo-main.png");
+  margin: 0 auto;
+}
 .main-title {
-  font-size: 35px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
-  margin-top: 30px;
 }
 .contacts {
+  margin-top: 25px;
   &-box {
     width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 }
 .tel {
@@ -118,15 +131,9 @@ body {
     font-size: 19px;
   }
 }
-.logo {
-  width: 98px;
-  height: 100px;
-  background: url("../img/logo-main.png");
-}
-.feedback {
-  display: flex;
-  align-items: center;
 
+.feedback {
+  padding-right: 20px;
   &__btn {
     width: 160px;
     height: 35px;
@@ -144,7 +151,6 @@ body {
 }
 .actual {
   margin-top: 30px;
-  height: 500px;//mbd
   &__title {
     font-size: 25px;
     font-weight: bold;
@@ -154,7 +160,7 @@ body {
   &__inner {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     width: 1024px;
   }
   &__article {
@@ -176,6 +182,37 @@ body {
       padding: 0 15px 10px 15px;
     }
   }
-
-
+}
+.main-footer {
+  background: $footerBg;
+  border-top: 3px solid $headerBorder;
+  height: 70px;//mbd
+  margin-top: 40px;
+  padding-top: 18px;
+}
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  &__link {
+    font-size: 16px;
+    color: black;
+    text-transform: lowercase;
+  }
+}
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  &__img {
+    background-image: url("../img/logo-small.png");
+    width: 33px;
+    height: 29px;
+  }
 }
