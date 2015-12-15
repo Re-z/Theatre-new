@@ -27,6 +27,10 @@ body {
   @include mainFont;
   background: url("../img/WhiteBg1.jpg") repeat;
 }
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, button {
+  background: $mainColor;
+  color: white;
+}
 .header {
   position: relative;
   background: $headerBg;

@@ -18,6 +18,10 @@ $mainColor: #787697;
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, button {
+  background: $mainColor;
+  color: white;
+}
 body {
   @include mainFont;
   background: url("../img/WhiteBg1.jpg") repeat;
@@ -81,5 +85,60 @@ body {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+  }
+}
+.logo {
+  width: 200px;
+  height: 219px;
+  background: url("../img/logo-main.png");
+  margin: 0 auto;
+}
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.contacts {
+  margin-top: 25px;
+  &-box {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.tel {
+  width: 150px;//mbd
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__ico {
+    width: 30px;
+    height: 30px;
+    background: url("../img/tel-about.png");
+  }
+  &__number {
+    color: $mainColor;
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+
+.feedback {
+  padding-right: 20px;
+  &__btn {
+    width: 160px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    background: $mainColor;
+    border-radius: 20px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

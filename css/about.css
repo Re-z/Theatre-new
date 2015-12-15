@@ -64,34 +64,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 21, ../sass/about.scss */
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, button::selection {
+  background: #787697;
+  color: white;
+}
+
+/* line 25, ../sass/about.scss */
 body {
   font-family: 'Neucha', cursive;
   background: url("../img/WhiteBg1.jpg") repeat;
 }
 
-/* line 25, ../sass/about.scss */
+/* line 29, ../sass/about.scss */
 .header {
   position: relative;
   background: #E9EDF0;
   border-bottom: 3px solid #dae1e6;
 }
 
-/* line 30, ../sass/about.scss */
+/* line 34, ../sass/about.scss */
 .nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 34, ../sass/about.scss */
+/* line 38, ../sass/about.scss */
 .nav__item {
   display: inline-block;
   border-left: 2px solid white;
 }
-/* line 38, ../sass/about.scss */
+/* line 42, ../sass/about.scss */
 .nav__item:last-of-type {
   border-right: 2px solid white;
 }
-/* line 42, ../sass/about.scss */
+/* line 46, ../sass/about.scss */
 .nav__link {
   padding: 15px 40px;
   box-sizing: border-box;
@@ -100,12 +106,12 @@ body {
   display: inline-block;
   color: black;
 }
-/* line 49, ../sass/about.scss */
+/* line 53, ../sass/about.scss */
 .nav__link:hover {
   background-color: #dae1e6;
 }
 
-/* line 54, ../sass/about.scss */
+/* line 58, ../sass/about.scss */
 .lang-switch {
   display: flex;
   justify-content: space-between;
@@ -115,26 +121,96 @@ body {
   right: 0;
   top: 0;
 }
-/* line 62, ../sass/about.scss */
+/* line 66, ../sass/about.scss */
 .lang-switch__ua, .lang-switch__ru {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 66, ../sass/about.scss */
+/* line 70, ../sass/about.scss */
 .lang-switch__ua-link, .lang-switch__ru-link {
   width: 30px;
   height: 30px;
   background: url("../img/ua-ico.png") no-repeat;
   display: block;
 }
-/* line 75, ../sass/about.scss */
+/* line 79, ../sass/about.scss */
 .lang-switch__ru-link {
   background: url("../img/rus-ico.png") no-repeat;
 }
-/* line 80, ../sass/about.scss */
+/* line 84, ../sass/about.scss */
 .lang-switch__text a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+
+/* line 90, ../sass/about.scss */
+.logo {
+  width: 200px;
+  height: 219px;
+  background: url("../img/logo-main.png");
+  margin: 0 auto;
+}
+
+/* line 96, ../sass/about.scss */
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 101, ../sass/about.scss */
+.contacts {
+  margin-top: 25px;
+}
+/* line 103, ../sass/about.scss */
+.contacts-box {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 111, ../sass/about.scss */
+.tel {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 116, ../sass/about.scss */
+.tel__ico {
+  width: 30px;
+  height: 30px;
+  background: url("../img/tel-about.png");
+}
+/* line 121, ../sass/about.scss */
+.tel__number {
+  color: #787697;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* line 128, ../sass/about.scss */
+.feedback {
+  padding-right: 20px;
+}
+/* line 130, ../sass/about.scss */
+.feedback__btn {
+  width: 160px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  background: #787697;
+  border-radius: 20px;
+}
+/* line 137, ../sass/about.scss */
+.feedback__btn:focus {
+  outline: none;
+}
+/* line 140, ../sass/about.scss */
+.feedback__btn:hover {
+  cursor: pointer;
 }
