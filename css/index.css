@@ -74,7 +74,7 @@ body {
 }
 
 /* line 30, ../sass/index.scss */
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, button::selection {
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, button {
   background: #6EB64A;
   color: white;
 }
@@ -266,7 +266,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button:
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
   height: 70px;
-  margin-top: 40px;
+  margin-top: 70px;
   padding-top: 18px;
 }
 

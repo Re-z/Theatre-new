@@ -18,7 +18,7 @@ $mainColor: #787697;
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, button {
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection {
   background: $mainColor;
   color: white;
 }
@@ -140,5 +140,103 @@ body {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+.about {
+  margin-top: 25px;
+  &__inner {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 19px;
+    text-align: justify;
+    line-height: 30px;
+  }
+}
+.we-offer {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  &__inner {
+    width: 512px;
+  }
+  &__title {
+    font-size: 30px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+  &__services {
+    list-style: circle;
+    list-style-position: inside;
+    margin-top: 15px;
+    &-item {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+.slider {
+  width: 512px;
+}
+.why-us {
+  @extend .we-offer;
+  &__inner {
+    @extend .we-offer__inner;
+    padding-left: 30px;
+  }
+  &__video {
+    width: 512px;
+    height: 340px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #ccc;
+  }
+  &__title {
+    @extend .we-offer__title;
+  }
+  &__list {
+    @extend .we-offer__services;
+    &-item {
+      @extend .we-offer__services-item;
+    }
+  }
+}
+.main-footer {
+  background: $footerBg;
+  border-top: 3px solid $headerBorder;
+  height: 70px;//mbd
+  margin-top: 70px;
+  padding-top: 18px;
+}
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  &__link {
+    font-size: 16px;
+    color: black;
+    text-transform: lowercase;
+  }
+}
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  &__img {
+    background-image: url("../img/logo-small.png");
+    width: 33px;
+    height: 29px;
   }
 }
