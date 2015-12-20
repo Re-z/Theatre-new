@@ -18,7 +18,7 @@ $mainColor: #787697;
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection {
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection,iframe::selection, img::selection {
   background: $mainColor;
   color: white;
 }
@@ -125,21 +125,18 @@ body {
   }
 }
 
-.feedback {
-  padding-right: 20px;
-  &__btn {
-    width: 160px;
-    height: 35px;
-    color: white;
-    font-weight: bold;
-    background: $mainColor;
-    border-radius: 20px;
-    &:focus {
-      outline: none;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+.feedback__trigger {
+  width: 160px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  background: $mainColor;
+  border-radius: 20px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 .about {
@@ -193,7 +190,7 @@ body {
   }
   &__video {
     width: 512px;
-    height: 340px;
+    height: 351px;
     border: 5px solid #fff;
     box-shadow: 0 0 5px #ccc;
   }

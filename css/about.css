@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 21, ../sass/about.scss */
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection {
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection, iframe::selection, img::selection {
   background: #787697;
   color: white;
 }
@@ -194,11 +194,7 @@ body {
 }
 
 /* line 128, ../sass/about.scss */
-.feedback {
-  padding-right: 20px;
-}
-/* line 130, ../sass/about.scss */
-.feedback__btn {
+.feedback__trigger {
   width: 160px;
   height: 35px;
   color: white;
@@ -206,84 +202,84 @@ body {
   background: #787697;
   border-radius: 20px;
 }
-/* line 137, ../sass/about.scss */
-.feedback__btn:focus {
+/* line 135, ../sass/about.scss */
+.feedback__trigger:focus {
   outline: none;
 }
-/* line 140, ../sass/about.scss */
-.feedback__btn:hover {
+/* line 138, ../sass/about.scss */
+.feedback__trigger:hover {
   cursor: pointer;
 }
 
-/* line 145, ../sass/about.scss */
+/* line 142, ../sass/about.scss */
 .about {
   margin-top: 25px;
 }
-/* line 147, ../sass/about.scss */
+/* line 144, ../sass/about.scss */
 .about__inner {
   width: 1024px;
   margin: 0 auto;
 }
-/* line 151, ../sass/about.scss */
+/* line 148, ../sass/about.scss */
 .about__title {
   font-size: 45px;
   margin-bottom: 20px;
   color: #787697;
   font-weight: bold;
 }
-/* line 157, ../sass/about.scss */
+/* line 154, ../sass/about.scss */
 .about__text {
   font-size: 19px;
   text-align: justify;
   line-height: 30px;
 }
 
-/* line 163, ../sass/about.scss */
+/* line 160, ../sass/about.scss */
 .we-offer, .why-us {
   margin-top: 45px;
   display: flex;
   justify-content: center;
 }
-/* line 167, ../sass/about.scss */
+/* line 164, ../sass/about.scss */
 .we-offer__inner, .why-us__inner {
   width: 512px;
 }
-/* line 170, ../sass/about.scss */
+/* line 167, ../sass/about.scss */
 .we-offer__title, .why-us__title {
   font-size: 30px;
   color: #787697;
   font-weight: bold;
 }
-/* line 175, ../sass/about.scss */
+/* line 172, ../sass/about.scss */
 .we-offer__services, .why-us__list {
   list-style: circle;
   list-style-position: inside;
   margin-top: 15px;
 }
-/* line 179, ../sass/about.scss */
+/* line 176, ../sass/about.scss */
 .we-offer__services-item, .why-us__list-item {
   font-size: 19px;
   line-height: 30px;
 }
 
-/* line 185, ../sass/about.scss */
+/* line 182, ../sass/about.scss */
 .slider {
   width: 512px;
 }
 
-/* line 190, ../sass/about.scss */
+/* line 187, ../sass/about.scss */
 .why-us__inner {
   padding-left: 30px;
 }
-/* line 194, ../sass/about.scss */
+/* line 191, ../sass/about.scss */
 .why-us__video {
   width: 512px;
-  height: 340px;
+  height: 351px;
   border: 5px solid #fff;
   box-shadow: 0 0 5px #ccc;
 }
 
-/* line 210, ../sass/about.scss */
+/* line 207, ../sass/about.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -292,33 +288,33 @@ body {
   padding-top: 18px;
 }
 
-/* line 217, ../sass/about.scss */
+/* line 214, ../sass/about.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 221, ../sass/about.scss */
+/* line 218, ../sass/about.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 226, ../sass/about.scss */
+/* line 223, ../sass/about.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 232, ../sass/about.scss */
+/* line 229, ../sass/about.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 237, ../sass/about.scss */
+/* line 234, ../sass/about.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;
