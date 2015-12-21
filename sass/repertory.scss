@@ -18,8 +18,7 @@ $mainColor: #51B3B6;
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection,iframe::selection, img::selection,
-h6::selection {
+*::selection {
   background: $mainColor;
   color: white;
 }
@@ -308,7 +307,6 @@ body {
     font-size: 19px;
     line-height: 30px;
     margin-top: 15px;
-    text-align: justify;
   }
   &__active {
     display: block;

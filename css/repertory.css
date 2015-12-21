@@ -64,41 +64,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 21, ../sass/repertory.scss */
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, h4::selection, button, li::selection, iframe::selection, img::selection,
-h6::selection {
+*::selection {
   background: #51B3B6;
   color: white;
 }
 
-/* line 26, ../sass/repertory.scss */
+/* line 25, ../sass/repertory.scss */
 body {
   font-family: 'Neucha', cursive;
   background: url("../img/WhiteBg1.jpg") repeat;
 }
 
-/* line 30, ../sass/repertory.scss */
+/* line 29, ../sass/repertory.scss */
 .header {
   position: relative;
   background: #E9EDF0;
   border-bottom: 3px solid #dae1e6;
 }
 
-/* line 35, ../sass/repertory.scss */
+/* line 34, ../sass/repertory.scss */
 .nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 39, ../sass/repertory.scss */
+/* line 38, ../sass/repertory.scss */
 .nav__item {
   display: inline-block;
   border-left: 2px solid white;
 }
-/* line 43, ../sass/repertory.scss */
+/* line 42, ../sass/repertory.scss */
 .nav__item:last-of-type {
   border-right: 2px solid white;
 }
-/* line 47, ../sass/repertory.scss */
+/* line 46, ../sass/repertory.scss */
 .nav__link {
   padding: 15px 40px;
   box-sizing: border-box;
@@ -107,12 +106,12 @@ body {
   display: inline-block;
   color: black;
 }
-/* line 54, ../sass/repertory.scss */
+/* line 53, ../sass/repertory.scss */
 .nav__link:hover {
   background-color: #dae1e6;
 }
 
-/* line 59, ../sass/repertory.scss */
+/* line 58, ../sass/repertory.scss */
 .lang-switch {
   display: flex;
   justify-content: space-between;
@@ -122,31 +121,31 @@ body {
   right: 0;
   top: 0;
 }
-/* line 67, ../sass/repertory.scss */
+/* line 66, ../sass/repertory.scss */
 .lang-switch__ua, .lang-switch__ru {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 71, ../sass/repertory.scss */
+/* line 70, ../sass/repertory.scss */
 .lang-switch__ua-link, .lang-switch__ru-link {
   width: 30px;
   height: 30px;
   background: url("../img/ua-ico.png") no-repeat;
   display: block;
 }
-/* line 80, ../sass/repertory.scss */
+/* line 79, ../sass/repertory.scss */
 .lang-switch__ru-link {
   background: url("../img/rus-ico.png") no-repeat;
 }
-/* line 85, ../sass/repertory.scss */
+/* line 84, ../sass/repertory.scss */
 .lang-switch__text a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
 
-/* line 91, ../sass/repertory.scss */
+/* line 90, ../sass/repertory.scss */
 .logo {
   width: 200px;
   height: 219px;
@@ -154,18 +153,18 @@ body {
   margin: 0 auto;
 }
 
-/* line 97, ../sass/repertory.scss */
+/* line 96, ../sass/repertory.scss */
 .main-title {
   font-size: 50px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 102, ../sass/repertory.scss */
+/* line 101, ../sass/repertory.scss */
 .contacts {
   margin-top: 25px;
 }
-/* line 104, ../sass/repertory.scss */
+/* line 103, ../sass/repertory.scss */
 .contacts-box {
   width: 1024px;
   margin: 0 auto;
@@ -174,27 +173,27 @@ body {
   align-items: center;
 }
 
-/* line 112, ../sass/repertory.scss */
+/* line 111, ../sass/repertory.scss */
 .tel {
   width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 117, ../sass/repertory.scss */
+/* line 116, ../sass/repertory.scss */
 .tel__ico {
   width: 30px;
   height: 30px;
   background: url("../img/tel-repertory.png");
 }
-/* line 122, ../sass/repertory.scss */
+/* line 121, ../sass/repertory.scss */
 .tel__number {
   color: #51B3B6;
   font-weight: bold;
   font-size: 19px;
 }
 
-/* line 129, ../sass/repertory.scss */
+/* line 128, ../sass/repertory.scss */
 .feedback {
   display: none;
   position: absolute;
@@ -207,7 +206,7 @@ body {
   height: 100%;
   background: rgba(211, 211, 211, 0.7);
 }
-/* line 140, ../sass/repertory.scss */
+/* line 139, ../sass/repertory.scss */
 .feedback__inner {
   width: 400px;
   height: 350px;
@@ -222,13 +221,13 @@ body {
   padding: 20px 15px 15px 10px;
   box-shadow: 0 2px 20px .5px black;
 }
-/* line 156, ../sass/repertory.scss */
+/* line 155, ../sass/repertory.scss */
 .feedback__title {
   font-size: 19px;
   font-weight: bold;
   line-height: 25px;
 }
-/* line 161, ../sass/repertory.scss */
+/* line 160, ../sass/repertory.scss */
 .feedback__input-text, .feedback__textarea {
   width: 100%;
   font-family: Neucha,cursive;
@@ -236,19 +235,19 @@ body {
   font-size: 19px;
   font-style: italic;
 }
-/* line 167, ../sass/repertory.scss */
+/* line 166, ../sass/repertory.scss */
 .feedback__input-text:first-of-type, .feedback__textarea:first-of-type {
   margin-top: 20px;
 }
-/* line 170, ../sass/repertory.scss */
+/* line 169, ../sass/repertory.scss */
 .feedback__input-text:focus, .feedback__textarea:focus {
   outline: 1px #51B3B6 solid;
 }
-/* line 174, ../sass/repertory.scss */
+/* line 173, ../sass/repertory.scss */
 .feedback__textarea {
   resize: none;
 }
-/* line 181, ../sass/repertory.scss */
+/* line 180, ../sass/repertory.scss */
 .feedback__submit {
   position: absolute;
   right: 4%;
@@ -264,11 +263,11 @@ body {
   padding: 5px 30px;
   cursor: pointer;
 }
-/* line 195, ../sass/repertory.scss */
+/* line 194, ../sass/repertory.scss */
 .feedback__submit:focus {
   outline: none;
 }
-/* line 199, ../sass/repertory.scss */
+/* line 198, ../sass/repertory.scss */
 .feedback__close {
   width: 30px;
   height: 30px;
@@ -278,7 +277,7 @@ body {
   top: 2%;
   cursor: pointer;
 }
-/* line 208, ../sass/repertory.scss */
+/* line 207, ../sass/repertory.scss */
 .feedback__trigger {
   width: 160px;
   height: 35px;
@@ -287,20 +286,20 @@ body {
   background: #51B3B6;
   border-radius: 20px;
 }
-/* line 215, ../sass/repertory.scss */
+/* line 214, ../sass/repertory.scss */
 .feedback__trigger:focus {
   outline: none;
 }
-/* line 218, ../sass/repertory.scss */
+/* line 217, ../sass/repertory.scss */
 .feedback__trigger:hover {
   cursor: pointer;
 }
 
-/* line 225, ../sass/repertory.scss */
+/* line 224, ../sass/repertory.scss */
 .shows {
   margin-top: 25px;
 }
-/* line 227, ../sass/repertory.scss */
+/* line 226, ../sass/repertory.scss */
 .shows__title {
   width: 100%;
   font-size: 45px;
@@ -308,60 +307,60 @@ body {
   color: #51B3B6;
   font-weight: bold;
 }
-/* line 234, ../sass/repertory.scss */
+/* line 233, ../sass/repertory.scss */
 .shows__inner {
   width: 1024px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-/* line 240, ../sass/repertory.scss */
+/* line 239, ../sass/repertory.scss */
 .shows__list {
   width: 30%;
 }
-/* line 243, ../sass/repertory.scss */
+/* line 242, ../sass/repertory.scss */
 .shows__description {
   width: 70%;
   margin-top: 15px;
 }
 
-/* line 248, ../sass/repertory.scss */
+/* line 247, ../sass/repertory.scss */
 .for-young, .for-senior {
   margin: 15px 0 0 0;
   padding: 0;
 }
-/* line 251, ../sass/repertory.scss */
+/* line 250, ../sass/repertory.scss */
 .for-young__title, .for-senior__title {
   font-size: 30px;
   color: #51B3B6;
   font-weight: bold;
   margin: 0 0 15px 0;
 }
-/* line 257, ../sass/repertory.scss */
+/* line 256, ../sass/repertory.scss */
 .for-young__item, .for-senior__item {
   font-size: 19px;
   line-height: 25px;
   cursor: pointer;
 }
 
-/* line 273, ../sass/repertory.scss */
+/* line 272, ../sass/repertory.scss */
 .active {
   background: #51B3B6;
   color: white;
   width: 200px;
 }
 
-/* line 279, ../sass/repertory.scss */
+/* line 278, ../sass/repertory.scss */
 .show {
   display: none;
 }
-/* line 281, ../sass/repertory.scss */
+/* line 280, ../sass/repertory.scss */
 .show :after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 286, ../sass/repertory.scss */
+/* line 285, ../sass/repertory.scss */
 .show__title {
   font-size: 30px;
   font-weight: bold;
@@ -370,14 +369,14 @@ body {
   width: 100%;
   text-align: right;
 }
-/* line 294, ../sass/repertory.scss */
+/* line 293, ../sass/repertory.scss */
 .show__img {
   width: 100%;
   max-width: 100%;
   border: 5px solid #fff;
   box-shadow: 0 0 5px #ccc;
 }
-/* line 299, ../sass/repertory.scss */
+/* line 298, ../sass/repertory.scss */
 .show__img_vertical {
   width: auto;
   max-width: 60%;
@@ -385,19 +384,18 @@ body {
   float: left;
   margin-right: 15px;
 }
-/* line 307, ../sass/repertory.scss */
+/* line 306, ../sass/repertory.scss */
 .show__text {
   font-size: 19px;
   line-height: 30px;
   margin-top: 15px;
-  text-align: justify;
 }
-/* line 313, ../sass/repertory.scss */
+/* line 311, ../sass/repertory.scss */
 .show__active {
   display: block;
 }
 
-/* line 318, ../sass/repertory.scss */
+/* line 316, ../sass/repertory.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -406,33 +404,33 @@ body {
   padding-top: 18px;
 }
 
-/* line 325, ../sass/repertory.scss */
+/* line 323, ../sass/repertory.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 329, ../sass/repertory.scss */
+/* line 327, ../sass/repertory.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 334, ../sass/repertory.scss */
+/* line 332, ../sass/repertory.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 340, ../sass/repertory.scss */
+/* line 338, ../sass/repertory.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 345, ../sass/repertory.scss */
+/* line 343, ../sass/repertory.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;
