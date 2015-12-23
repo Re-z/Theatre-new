@@ -193,23 +193,20 @@ body {
   font-size: 19px;
 }
 
-/* line 128, ../sass/repertory.scss */
+/* line 127, ../sass/repertory.scss */
 .feedback {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 100%;
-  height: 100%;
   background: rgba(211, 211, 211, 0.7);
 }
-/* line 139, ../sass/repertory.scss */
+/* line 136, ../sass/repertory.scss */
 .feedback__inner {
   width: 400px;
-  height: 350px;
   opacity: 1;
   background: lightgoldenrodyellow;
   position: fixed;
@@ -221,13 +218,13 @@ body {
   padding: 20px 15px 15px 10px;
   box-shadow: 0 2px 20px .5px black;
 }
-/* line 155, ../sass/repertory.scss */
+/* line 149, ../sass/repertory.scss */
 .feedback__title {
   font-size: 19px;
   font-weight: bold;
   line-height: 25px;
 }
-/* line 160, ../sass/repertory.scss */
+/* line 154, ../sass/repertory.scss */
 .feedback__input-text, .feedback__textarea {
   width: 100%;
   font-family: Neucha,cursive;
@@ -235,19 +232,19 @@ body {
   font-size: 19px;
   font-style: italic;
 }
-/* line 166, ../sass/repertory.scss */
+/* line 160, ../sass/repertory.scss */
 .feedback__input-text:first-of-type, .feedback__textarea:first-of-type {
   margin-top: 20px;
 }
-/* line 169, ../sass/repertory.scss */
+/* line 163, ../sass/repertory.scss */
 .feedback__input-text:focus, .feedback__textarea:focus {
   outline: 1px #51B3B6 solid;
 }
-/* line 173, ../sass/repertory.scss */
+/* line 167, ../sass/repertory.scss */
 .feedback__textarea {
   resize: none;
 }
-/* line 180, ../sass/repertory.scss */
+/* line 174, ../sass/repertory.scss */
 .feedback__submit {
   position: absolute;
   right: 4%;
@@ -263,21 +260,21 @@ body {
   padding: 5px 30px;
   cursor: pointer;
 }
-/* line 194, ../sass/repertory.scss */
+/* line 188, ../sass/repertory.scss */
 .feedback__submit:focus {
   outline: none;
 }
-/* line 198, ../sass/repertory.scss */
+/* line 192, ../sass/repertory.scss */
 .feedback__close {
   width: 30px;
   height: 30px;
-  background: url("../img/feedback-close.png") no-repeat;
+  background: url("../img/feedback-close-repertory.png") no-repeat;
   position: absolute;
   right: 2%;
   top: 2%;
   cursor: pointer;
 }
-/* line 207, ../sass/repertory.scss */
+/* line 201, ../sass/repertory.scss */
 .feedback__trigger {
   width: 160px;
   height: 35px;
@@ -286,20 +283,20 @@ body {
   background: #51B3B6;
   border-radius: 20px;
 }
-/* line 214, ../sass/repertory.scss */
+/* line 208, ../sass/repertory.scss */
 .feedback__trigger:focus {
   outline: none;
 }
-/* line 217, ../sass/repertory.scss */
+/* line 211, ../sass/repertory.scss */
 .feedback__trigger:hover {
   cursor: pointer;
 }
 
-/* line 224, ../sass/repertory.scss */
+/* line 217, ../sass/repertory.scss */
 .shows {
   margin-top: 25px;
 }
-/* line 226, ../sass/repertory.scss */
+/* line 219, ../sass/repertory.scss */
 .shows__title {
   width: 100%;
   font-size: 45px;
@@ -307,60 +304,60 @@ body {
   color: #51B3B6;
   font-weight: bold;
 }
-/* line 233, ../sass/repertory.scss */
+/* line 226, ../sass/repertory.scss */
 .shows__inner {
   width: 1024px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-/* line 239, ../sass/repertory.scss */
+/* line 232, ../sass/repertory.scss */
 .shows__list {
   width: 30%;
 }
-/* line 242, ../sass/repertory.scss */
+/* line 235, ../sass/repertory.scss */
 .shows__description {
   width: 70%;
   margin-top: 15px;
 }
 
-/* line 247, ../sass/repertory.scss */
+/* line 240, ../sass/repertory.scss */
 .for-young, .for-senior {
   margin: 15px 0 0 0;
   padding: 0;
 }
-/* line 250, ../sass/repertory.scss */
+/* line 243, ../sass/repertory.scss */
 .for-young__title, .for-senior__title {
   font-size: 30px;
   color: #51B3B6;
   font-weight: bold;
   margin: 0 0 15px 0;
 }
-/* line 256, ../sass/repertory.scss */
+/* line 249, ../sass/repertory.scss */
 .for-young__item, .for-senior__item {
   font-size: 19px;
   line-height: 25px;
   cursor: pointer;
 }
 
-/* line 272, ../sass/repertory.scss */
+/* line 265, ../sass/repertory.scss */
 .active {
   background: #51B3B6;
   color: white;
   width: 200px;
 }
 
-/* line 278, ../sass/repertory.scss */
+/* line 271, ../sass/repertory.scss */
 .show {
   display: none;
 }
-/* line 280, ../sass/repertory.scss */
+/* line 273, ../sass/repertory.scss */
 .show :after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 285, ../sass/repertory.scss */
+/* line 278, ../sass/repertory.scss */
 .show__title {
   font-size: 30px;
   font-weight: bold;
@@ -369,14 +366,14 @@ body {
   width: 100%;
   text-align: right;
 }
-/* line 293, ../sass/repertory.scss */
+/* line 286, ../sass/repertory.scss */
 .show__img {
   width: 100%;
   max-width: 100%;
   border: 5px solid #fff;
   box-shadow: 0 0 5px #ccc;
 }
-/* line 298, ../sass/repertory.scss */
+/* line 291, ../sass/repertory.scss */
 .show__img_vertical {
   width: auto;
   max-width: 60%;
@@ -384,18 +381,18 @@ body {
   float: left;
   margin-right: 15px;
 }
-/* line 306, ../sass/repertory.scss */
+/* line 299, ../sass/repertory.scss */
 .show__text {
   font-size: 19px;
   line-height: 30px;
   margin-top: 15px;
 }
-/* line 311, ../sass/repertory.scss */
+/* line 304, ../sass/repertory.scss */
 .show__active {
   display: block;
 }
 
-/* line 316, ../sass/repertory.scss */
+/* line 309, ../sass/repertory.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -404,33 +401,33 @@ body {
   padding-top: 18px;
 }
 
-/* line 323, ../sass/repertory.scss */
+/* line 316, ../sass/repertory.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 327, ../sass/repertory.scss */
+/* line 320, ../sass/repertory.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 332, ../sass/repertory.scss */
+/* line 325, ../sass/repertory.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 338, ../sass/repertory.scss */
+/* line 331, ../sass/repertory.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 343, ../sass/repertory.scss */
+/* line 336, ../sass/repertory.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;

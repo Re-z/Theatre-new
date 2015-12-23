@@ -46,6 +46,21 @@
             <button class="feedback__trigger">Обратная связь</button>
         </div>
     </div>
+
+    <section class="feedback">
+        <div class="feedback__inner">
+            <form class="feedback__form" action="">
+                <div class="feedback__close" role="button"></div>
+                <h6 class="feedback__title">Здесь Вы можете написать свое пожелание, замечание, предложение по сотрудничеству или заказать обратный звонок</h6>
+                <input class="feedback__input-text" type="text" placeholder="Ваше имя" required name="nameFF" x-autocompletetype="name" />
+                <input class="feedback__input-text" type="email" placeholder="Ваш эмейл" required name="contactFF" x-autocompletetype="email"/>
+                <input class="feedback__input-text" type="text" placeholder="Ваш номер телефона"/>
+                <textarea class="feedback__textarea" placeholder="Черканите пару строк..." cols="30" rows="5" name="messageFF" required></textarea>
+                <input  class="feedback__submit" type="submit" value=""/>
+            </form>
+        </div>
+    </section>
+
     <section class="about">
         <div class="about__inner">
             <h2 class="about__title">О нас</h2>
@@ -54,6 +69,7 @@
             </p>
         </div>
     </section>
+
     <section class="we-offer">
         <div class="we-offer__inner">
             <h4 class="we-offer__title">Мы предлагаем следующие услуги:</h4>
@@ -75,6 +91,7 @@
             </ul>
         </div>
     </section>
+
     <section class="why-us">
         <iframe class="why-us__video" src="https://www.youtube.com/embed/iao-l4USKEU" frameborder="0" allowfullscreen></iframe>
         <div class="why-us__inner">
@@ -101,12 +118,9 @@
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="../js/bxslider.min.js"></script>
+<script src="../js/about.js"></script>
 <script>
-    $('.bxslider').bxSlider({
-        controls: true,
-        pager: false
-    });
+
 </script>
 </body>
 </html>

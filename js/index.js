@@ -1,16 +1,4 @@
-/*
- *  jQuery OwlCarousel v1.3.3
- *
- *  Copyright (c) 2013 Bartosz Wojciechowski
- *  http://www.owlgraphic.com/owlcarousel/
- *
- *  Licensed under MIT
- *
- */
-
-/*JS Lint helpers: */
-/*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
-/*jslint nomen: true, continue:true */
+//Owl carousel
 
 if (typeof Object.create !== "function") {
     Object.create = function (obj) {
@@ -1510,3 +1498,30 @@ if (typeof Object.create !== "function") {
         afterLazyLoad: false
     };
 }(jQuery, window, document));
+
+
+$(document).ready(function() {
+//Owl carousel user config
+
+    $("#owl-demo").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+        items : 4,
+        itemsDesktop : [1200,3],
+        itemsDesktopSmall : [1024,3],
+        navigation : true,
+        navigationText : false,
+        pagination: false,
+        slideSpeed: 700
+    });
+
+    //open-close feedback-popup
+
+    $('.feedback__trigger').click(function() {
+        $('.feedback').fadeIn();
+    });
+    $('.feedback__close').click(function() {
+        $('.feedback').fadeOut();
+    })
+});
+
+

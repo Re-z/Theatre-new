@@ -193,7 +193,88 @@ body {
   font-size: 19px;
 }
 
-/* line 128, ../sass/about.scss */
+/* line 127, ../sass/about.scss */
+.feedback {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(211, 211, 211, 0.7);
+}
+/* line 136, ../sass/about.scss */
+.feedback__inner {
+  width: 400px;
+  opacity: 1;
+  background: lightgoldenrodyellow;
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -200px;
+  padding: 20px 15px 15px 10px;
+  box-shadow: 0 2px 20px .5px black;
+}
+/* line 149, ../sass/about.scss */
+.feedback__title {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 25px;
+}
+/* line 154, ../sass/about.scss */
+.feedback__input-text, .feedback__textarea {
+  width: 100%;
+  font-family: Neucha,cursive;
+  margin-top: 10px;
+  font-size: 19px;
+  font-style: italic;
+}
+/* line 160, ../sass/about.scss */
+.feedback__input-text:first-of-type, .feedback__textarea:first-of-type {
+  margin-top: 20px;
+}
+/* line 163, ../sass/about.scss */
+.feedback__input-text:focus, .feedback__textarea:focus {
+  outline: 1px #787697 solid;
+}
+/* line 167, ../sass/about.scss */
+.feedback__textarea {
+  resize: none;
+}
+/* line 174, ../sass/about.scss */
+.feedback__submit {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  width: 30px;
+  height: 30px;
+  background-color: #787697;
+  background-image: url("../img/check.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+/* line 188, ../sass/about.scss */
+.feedback__submit:focus {
+  outline: none;
+}
+/* line 192, ../sass/about.scss */
+.feedback__close {
+  width: 30px;
+  height: 30px;
+  background: url("../img/feedback-close-about.png") no-repeat;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+/* line 201, ../sass/about.scss */
 .feedback__trigger {
   width: 160px;
   height: 35px;
@@ -202,76 +283,76 @@ body {
   background: #787697;
   border-radius: 20px;
 }
-/* line 135, ../sass/about.scss */
+/* line 208, ../sass/about.scss */
 .feedback__trigger:focus {
   outline: none;
 }
-/* line 138, ../sass/about.scss */
+/* line 211, ../sass/about.scss */
 .feedback__trigger:hover {
   cursor: pointer;
 }
 
-/* line 142, ../sass/about.scss */
+/* line 216, ../sass/about.scss */
 .about {
   margin-top: 25px;
 }
-/* line 144, ../sass/about.scss */
+/* line 218, ../sass/about.scss */
 .about__inner {
   width: 1024px;
   margin: 0 auto;
 }
-/* line 148, ../sass/about.scss */
+/* line 222, ../sass/about.scss */
 .about__title {
   font-size: 45px;
   margin-bottom: 20px;
   color: #787697;
   font-weight: bold;
 }
-/* line 154, ../sass/about.scss */
+/* line 228, ../sass/about.scss */
 .about__text {
   font-size: 19px;
   text-align: justify;
   line-height: 30px;
 }
 
-/* line 160, ../sass/about.scss */
+/* line 234, ../sass/about.scss */
 .we-offer, .why-us {
   margin-top: 45px;
   display: flex;
   justify-content: center;
 }
-/* line 164, ../sass/about.scss */
+/* line 238, ../sass/about.scss */
 .we-offer__inner, .why-us__inner {
   width: 512px;
 }
-/* line 167, ../sass/about.scss */
+/* line 241, ../sass/about.scss */
 .we-offer__title, .why-us__title {
   font-size: 30px;
   color: #787697;
   font-weight: bold;
 }
-/* line 172, ../sass/about.scss */
+/* line 246, ../sass/about.scss */
 .we-offer__services, .why-us__list {
   list-style: circle;
   list-style-position: inside;
   margin-top: 15px;
 }
-/* line 176, ../sass/about.scss */
+/* line 250, ../sass/about.scss */
 .we-offer__services-item, .why-us__list-item {
   font-size: 19px;
   line-height: 30px;
 }
 
-/* line 182, ../sass/about.scss */
+/* line 256, ../sass/about.scss */
 .slider {
   width: 512px;
 }
 
-/* line 187, ../sass/about.scss */
+/* line 261, ../sass/about.scss */
 .why-us__inner {
   padding-left: 30px;
 }
-/* line 191, ../sass/about.scss */
+/* line 265, ../sass/about.scss */
 .why-us__video {
   width: 512px;
   height: 351px;
@@ -279,7 +360,7 @@ body {
   box-shadow: 0 0 5px #ccc;
 }
 
-/* line 207, ../sass/about.scss */
+/* line 281, ../sass/about.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -288,33 +369,33 @@ body {
   padding-top: 18px;
 }
 
-/* line 214, ../sass/about.scss */
+/* line 288, ../sass/about.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 218, ../sass/about.scss */
+/* line 292, ../sass/about.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 223, ../sass/about.scss */
+/* line 297, ../sass/about.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 229, ../sass/about.scss */
+/* line 303, ../sass/about.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 234, ../sass/about.scss */
+/* line 308, ../sass/about.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;
