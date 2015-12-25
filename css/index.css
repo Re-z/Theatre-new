@@ -379,3 +379,22 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   width: 33px;
   height: 29px;
 }
+
+@media screen and (max-width: 768px) {
+  /* line 290, ../sass/index.scss */
+  .contacts-box {
+    width: auto;
+  }
+
+  /* line 294, ../sass/index.scss */
+  .actual__inner {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  /* line 298, ../sass/index.scss */
+  .actual__article {
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
