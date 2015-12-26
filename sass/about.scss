@@ -5,6 +5,7 @@ $headerBg: #E9EDF0;
 $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #787697;
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
 // declare mixins
 @mixin out {
   outline: 1px solid red;
@@ -106,6 +107,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media  screen and ('max-width: 1024px') {
+      width: auto;
+    }
   }
 }
 .tel {
@@ -218,6 +222,10 @@ body {
   &__inner {
     width: 1024px;
     margin: 0 auto;
+    @media #{$tablet} {
+      width: auto;
+      padding: 0 15px 0 15px;
+    }
   }
   &__title {
     font-size: 45px;
@@ -235,8 +243,18 @@ body {
   margin-top: 45px;
   display: flex;
   justify-content: center;
+  @media #{$tablet} {
+    flex-wrap: wrap;
+    padding: 0 15px 0 15px;
+    margin-top: 15px;
+  }
   &__inner {
     width: 512px;
+    @media #{$tablet} {
+      width: 650px;
+      order: 2;
+      margin-top: 20px;
+    }
   }
   &__title {
     font-size: 30px;
@@ -255,18 +273,29 @@ body {
 }
 .slider {
   width: 512px;
+  @media #{$tablet} {
+    width: 650px;
+    order: 1;
+  }
 }
 .why-us {
   @extend .we-offer;
   &__inner {
     @extend .we-offer__inner;
     padding-left: 30px;
+    @media #{$tablet} {
+      padding: 0;
+    }
   }
   &__video {
     width: 512px;
     height: 351px;
     border: 5px solid #fff;
     box-shadow: 0 0 5px #ccc;
+    @media #{$tablet} {
+      width: 650px;
+      height: 450px;
+    }
   }
   &__title {
     @extend .we-offer__title;

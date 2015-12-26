@@ -10,6 +10,7 @@ $headerBg: #E9EDF0;
 $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #6EB64A;
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
 // declare mixins
 @mixin out {
   outline: 1px solid red;
@@ -23,6 +24,7 @@ $mainColor: #6EB64A;
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
+
 body {
   @include mainFont;
   background: url("../img/WhiteBg1.jpg") repeat;
@@ -111,6 +113,9 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media  screen and ('max-width: 1024px') {
+      width: auto;
+    }
   }
 }
 .tel {
@@ -231,6 +236,10 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     justify-content: space-between;
     margin: 20px auto 0 auto;
     width: 1024px;
+    @media #{$tablet} {
+      width: auto;
+      flex-wrap: wrap;
+    }
   }
   &__article {
     width: 32%;
@@ -284,22 +293,4 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     width: 33px;
     height: 29px;
   }
-}
-//adaptive for 768px
-@media screen and(max-width: 768px) {
-.contacts-box {
-  width: auto;
-}
-.actual {
-  &__inner {
-    width: auto;
-    flex-wrap: wrap;
-  }
-  &__article {
-    width: 330px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-}
-
 }
