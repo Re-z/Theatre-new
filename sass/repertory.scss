@@ -5,6 +5,8 @@ $headerBg: #E9EDF0;
 $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #51B3B6;
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+
 // declare mixins
 @mixin out {
   outline: 1px solid red;
@@ -106,6 +108,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media  screen and ('max-width: 1024px') {
+      width: auto;
+    }
   }
 }
 .tel {
@@ -213,6 +218,11 @@ body {
     }
   }
 }
+.content {
+  @media #{$tablet} {
+    padding: 0 25px 0 25px;
+  }
+}
 //section
 .shows {
   margin-top: 25px;
@@ -228,13 +238,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    @media #{$tablet} {
+      width: auto;
+    }
   }
   &__list {
     width: 30%;
   }
   &__description {
     width: 70%;
+    box-sizing: border-box;
     margin-top: 15px;
+    @media #{$tablet} {
+      padding-left: 20px;
+    }
   }
 }
 .for-young {
@@ -294,6 +311,7 @@ body {
       height: auto;
       float: left;
       margin-right: 15px;
+
     }
   }
   &__text {

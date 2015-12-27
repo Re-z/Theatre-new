@@ -224,7 +224,7 @@ body {
     margin: 0 auto;
     @media #{$tablet} {
       width: auto;
-      padding: 0 15px 0 15px;
+      padding: 0 25px 0 25px;
     }
   }
   &__title {
@@ -245,7 +245,7 @@ body {
   justify-content: center;
   @media #{$tablet} {
     flex-wrap: wrap;
-    padding: 0 15px 0 15px;
+    padding: 0 25px 0 25px;
     margin-top: 15px;
   }
   &__inner {

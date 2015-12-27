@@ -311,7 +311,7 @@ body {
   /* line 222, ../sass/about.scss */
   .about__inner {
     width: auto;
-    padding: 0 15px 0 15px;
+    padding: 0 25px 0 25px;
   }
 }
 /* line 230, ../sass/about.scss */
@@ -338,7 +338,7 @@ body {
   /* line 242, ../sass/about.scss */
   .we-offer, .why-us {
     flex-wrap: wrap;
-    padding: 0 15px 0 15px;
+    padding: 0 25px 0 25px;
     margin-top: 15px;
   }
 }
