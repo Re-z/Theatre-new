@@ -11,7 +11,7 @@ $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #6EB64A;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
-$tel: "(min-width: 480px) and (max-width: 767px)";
+$tel: "(min-width: 320px) and (max-width: 767px)";
 // declare mixins
 @mixin out {
   outline: 1px solid red;
