@@ -127,7 +127,14 @@ $(document).ready(function() {
     });
     $('.feedback__close').click(function() {
         $('.feedback').fadeOut();
-    })
+    });
+
+    //adaptive menu
+    $('.menu-burger').click(function(){
+        $('ul.nav').slideToggle();
+        $(this).toggleClass('menu-burger_pressed')
+    });
+
 });
 
 

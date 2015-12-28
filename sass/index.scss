@@ -40,24 +40,23 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   border-bottom: 3px solid $headerBorder;
 }
 .menu-burger {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 30px;
   height: 30px;
   padding: 15px 10px 5px 10px;
   justify-content: center;
   cursor: pointer;
-  &_pressed {
-    background-color: $headerBorder;
+  @media #{$tel} {
+    display: flex;
   }
-  &:hover {
+  &_pressed {
     background-color: $headerBorder;
   }
   &__strip {
     width: 100%;
     height: 3px;
     background-color: black;
-
   }
 }
 .nav {
@@ -180,7 +179,6 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   background: rgba(211,211,211, .7);
   &__inner {
     width: 400px;
-    opacity: 1;
     background: lightgoldenrodyellow;
     position:fixed;
     z-index: 1000;
@@ -190,6 +188,10 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     margin-left: -200px;
     padding: 20px 15px 15px 10px;
     box-shadow: 0 2px 20px .5px black;
+    @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
   }
   &__title {
     font-size: 19px;
@@ -230,6 +232,9 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     text-align: center;
     padding: 5px 30px;
     cursor: pointer;
+    @media #{$tel} {
+      bottom: 6%;
+    }
     &:focus {
       outline: none;
     }

@@ -6,6 +6,7 @@ $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #51B3B6;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
+$tel: "(min-width: 320px) and (max-width: 767px)";
 
 // declare mixins
 @mixin out {
@@ -33,14 +34,40 @@ body {
   background: $headerBg;
   border-bottom: 3px solid $headerBorder;
 }
+.menu-burger {
+  display: none;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  padding: 15px 10px 5px 10px;
+  justify-content: center;
+  cursor: pointer;
+  @media #{$tel} {
+    display: flex;
+  }
+  &_pressed {
+    background-color: $headerBorder;
+  }
+  &__strip {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+}
 .nav {
   list-style: none;
   text-align: center;
   font-size: 0;
+  @media #{$tel} {
+    display: none;
+  }
   &__item {
     display: inline-block;
     border-left: 2px solid white;
-
+    @media #{$tel} {
+      display: block;
+      border: none;
+    }
     &:last-of-type {
       border-right: 2px solid white;
     }
@@ -52,6 +79,10 @@ body {
     font-size: 19px;
     display: inline-block;
     color: black;
+    @media #{$tel} {
+      padding: 15px 0;
+      width: 100%;
+    }
     &:hover {
       background-color: $headerBorder;
     }
@@ -140,7 +171,6 @@ body {
   background: rgba(211,211,211, .7);
   &__inner {
     width: 400px;
-    opacity: 1;
     background: lightgoldenrodyellow;
     position:fixed;
     z-index: 1000;
@@ -150,6 +180,10 @@ body {
     margin-left: -200px;
     padding: 20px 15px 15px 10px;
     box-shadow: 0 2px 20px .5px black;
+    @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
   }
   &__title {
     font-size: 19px;
@@ -190,6 +224,9 @@ body {
     text-align: center;
     padding: 5px 30px;
     cursor: pointer;
+    @media #{$tel} {
+      bottom: 6%;
+    }
     &:focus {
       outline: none;
     }
@@ -240,17 +277,23 @@ body {
     margin: 0 auto;
     @media #{$tablet} {
       width: auto;
+      padding: 0 25px 0 15px;
+    }
+    @media #{$tel} {
+      width: auto;
+      padding: 0 20px 0 15px;
     }
   }
   &__list {
     width: 30%;
+    min-width: 200px;
   }
   &__description {
     width: 70%;
     box-sizing: border-box;
     margin-top: 15px;
-    @media #{$tablet} {
-      padding-left: 20px;
+    @media #{$tel} {
+      width: 53%;
     }
   }
 }
@@ -283,10 +326,14 @@ body {
   background: $mainColor;
   color: white;
   width: 200px;
+
 }
 
 .show {
   display: none;
+  @media #{$tel} {
+    padding-left: 20px;
+  }
   :after {
     content: '';
     display: table;
@@ -299,6 +346,10 @@ body {
     margin-bottom: 15px;
     width: 100%;
     text-align: right;
+    @media #{$tel} {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
   }
   &__img {
     width: 100%;
@@ -311,16 +362,21 @@ body {
       height: auto;
       float: left;
       margin-right: 15px;
-
+      @media #{$tel} {
+        float: none;
+        max-width: 100%;
+      }
     }
   }
   &__text {
     font-size: 19px;
     line-height: 30px;
     margin-top: 15px;
+
   }
   &__active {
     display: block;
+
   }
 }
 
