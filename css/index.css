@@ -408,7 +408,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   /* line 288, ../sass/index.scss */
   .actual__article {
     width: 330px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 25px auto;
   }
 }
 /* line 295, ../sass/index.scss */

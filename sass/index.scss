@@ -290,7 +290,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     border: 1px solid;
     @media #{$tel} {
       width: 330px;
-      margin: 0 auto 15px auto;
+      margin: 0 auto 25px auto;
     }
     &-img {
       margin: 0 auto;

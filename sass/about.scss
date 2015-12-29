@@ -330,7 +330,7 @@ body {
     order: 1;
   }
   @media #{$tel} {
-    min-width: 450px;
+    width: 100%;
     order: 1;
   }
 }
@@ -340,6 +340,9 @@ body {
     @extend .we-offer__inner;
     padding-left: 30px;
     @media #{$tablet} {
+      padding: 0;
+    }
+    @media #{$tel} {
       padding: 0;
     }
   }

@@ -275,12 +275,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    position: relative;
     @media #{$tablet} {
       width: auto;
       padding: 0 25px 0 15px;
     }
     @media #{$tel} {
       width: auto;
+      overflow: hidden;
       padding: 0 20px 0 15px;
     }
   }
@@ -292,9 +294,7 @@ body {
     width: 70%;
     box-sizing: border-box;
     margin-top: 15px;
-    @media #{$tel} {
-      width: 53%;
-    }
+    position: absolute;
   }
 }
 .for-young {
@@ -332,7 +332,12 @@ body {
 .show {
   display: none;
   @media #{$tel} {
-    padding-left: 20px;
+    position: absolute;
+    z-index: 100;
+    right: -70%;
+    width: 300px;
+    border: 2px solid;
+    transition: 1s;
   }
   :after {
     content: '';
