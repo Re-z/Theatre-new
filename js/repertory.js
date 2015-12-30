@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    //Enable-disable backround when active
+    //Enable-disable background when active
     $('.for-young__item').click(function(){
         $('.for-senior__item').siblings().removeClass('active');
         $(this).siblings().removeClass('active').end().addClass('active');

@@ -7,6 +7,7 @@ $headerBorder: darken($headerBg, 5%);
 $mainColor: #51B3B6;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $tel: "(min-width: 320px) and (max-width: 767px)";
+$smallTel: "(min-width: 300px) and (max-width: 500px)";
 
 // declare mixins
 @mixin out {
@@ -331,13 +332,14 @@ body {
 
 .show {
   display: none;
+  transition: right 1s;
   @media #{$tel} {
     position: absolute;
     z-index: 100;
-    right: -70%;
+    right: -150px;
     width: 300px;
     border: 2px solid;
-    transition: 1s;
+    background: white;
   }
   :after {
     content: '';
@@ -361,12 +363,14 @@ body {
     max-width: 100%;
     border: 5px solid #fff;
     box-shadow: 0 0 5px #ccc;
+    box-sizing: border-box;
     &_vertical {
       width: auto;
       max-width: 60%;
       height: auto;
       float: left;
       margin-right: 15px;
+      box-sizing: border-box;
       @media #{$tel} {
         float: none;
         max-width: 100%;
@@ -377,11 +381,13 @@ body {
     font-size: 19px;
     line-height: 30px;
     margin-top: 15px;
-
+    @media #{$tel} {
+      padding: 0 10px;
+    }
   }
   &__active {
     display: block;
-
+    right: 150px;
   }
 }
 
