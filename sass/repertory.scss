@@ -299,7 +299,8 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    @include out3;
+
     @media #{$tablet} {
       width: auto;
       padding: 0 25px 0 15px;
@@ -310,18 +311,24 @@ body {
     }
     @media #{$xsTel} {
       width: auto;
-      padding-bottom: 20px;
+      padding-bottom: 50px;
+      overflow: hidden;
     }
   }
   &__list {
     width: 30%;
     min-width: 200px;
+    @include out2;
   }
   &__description {
-    width: 70%;
+    width: 69%;
+    max-width: 100%;
     box-sizing: border-box;
-    margin-top: 15px;
-    position: absolute;
+    @include out;
+
+    @media #{$xsTel} {
+      position: absolute;
+    }
   }
 }
 .for-young {
@@ -357,14 +364,9 @@ body {
 
 .show {
   display: none;
-  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+  padding: 10px 5px 5px 5px;
   @media #{$tel} {
-    position: absolute;
-    z-index: 100;
-    right: -230px;
-    width: 320px;
-    border: 2px solid;
-    background: white;
   }
 
   @media #{$xsTel} {
@@ -378,7 +380,7 @@ body {
   }
   &:first-of-type {
   display: block;
-  right: 103px;
+  right: 110px;
 }
   :after {
     content: '';
@@ -390,8 +392,8 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 1%;
+    top: 1%;
     background: url('../img/feedback-close-repertory.png') center;
     cursor: pointer;
     @media #{$xsTel} {
@@ -413,6 +415,7 @@ body {
       font-size: 25px;
       margin-bottom: 10px;
       margin-left: -5px;
+      text-indent: 15px;
     }
   }
   &__img {

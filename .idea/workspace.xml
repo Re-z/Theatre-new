@@ -36,11 +36,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="repertory.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="repertory.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/repertory.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.807693" vertical-offset="1479" max-vertical-offset="4097">
-                  <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+                <state vertical-scroll-proportion="0.4987775" vertical-offset="1955" max-vertical-offset="4420">
+                  <caret line="139" column="52" selection-start-line="139" selection-start-column="52" selection-end-line="139" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -76,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="repertory.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="repertory.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/repertory.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.48850575" vertical-offset="0" max-vertical-offset="3009">
-                  <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="3689">
+                  <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +93,8 @@
           <file leaf-file-name="repertory.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/repertory.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.18486352" vertical-offset="6549" max-vertical-offset="8347">
-                  <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
+                <state vertical-scroll-proportion="0.308933" vertical-offset="6993" max-vertical-offset="8398">
+                  <caret line="426" column="16" selection-start-line="426" selection-start-column="16" selection-end-line="426" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/about.html" />
         <option value="$PROJECT_DIR$/sass/about.scss" />
-        <option value="$PROJECT_DIR$/pages/repertory.html" />
         <option value="$PROJECT_DIR$/js/repertory.js" />
+        <option value="$PROJECT_DIR$/pages/repertory.html" />
         <option value="$PROJECT_DIR$/sass/repertory.scss" />
       </list>
     </option>
@@ -728,14 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/repertory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="1479" max-vertical-offset="4097">
-          <caret line="102" column="59" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/repertory.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325554" vertical-offset="7042" max-vertical-offset="11220">
@@ -746,16 +738,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/repertory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48850575" vertical-offset="0" max-vertical-offset="3009">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="3689">
+          <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/repertory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4987775" vertical-offset="1955" max-vertical-offset="4420">
+          <caret line="139" column="52" selection-start-line="139" selection-start-column="52" selection-end-line="139" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/repertory.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18486352" vertical-offset="6549" max-vertical-offset="8347">
-          <caret line="394" column="56" selection-start-line="394" selection-start-column="56" selection-end-line="394" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.308933" vertical-offset="6993" max-vertical-offset="8398">
+          <caret line="426" column="16" selection-start-line="426" selection-start-column="16" selection-end-line="426" selection-end-column="16" />
           <folding />
         </state>
       </provider>

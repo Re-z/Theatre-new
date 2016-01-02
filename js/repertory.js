@@ -16,6 +16,8 @@ $(document).ready(function() {
        },800);
     });
 
+    var rightShift = 110;
+
     //Open-close show-window
     function showHide() {
         $('.shows__description .show').hide()
@@ -24,116 +26,154 @@ $(document).ready(function() {
     $('#lake-trigger').click(function() {
         showHide();
         $('#lake').show().animate({
-            right: 103
+            right: rightShift
         },800);
     });
 
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 103
+            right: rightShift
         },800);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 103
+            right: rightShift
         },800);
     });
 
     $('#advantures-trigger').click(function() {
         showHide();
-        $('#advantures').show();
+        $('#advantures').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#princess-trigger').click(function() {
         showHide();
-        $('#princess').show();
+        $('#princess').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#words-trigger').click(function() {
         showHide();
-        $('#words').show();
+        $('#words').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#treasury-trigger').click(function() {
         showHide();
-        $('#treasury').show();
+        $('#treasury').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#ulianka-trigger').click(function() {
         showHide();
-        $('#ulianka').show();
+        $('#ulianka').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#bears-trigger').click(function() {
         showHide();
-        $('#bears').show();
+        $('#bears').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#lyana-trigger').click(function() {
         showHide();
-        $('#lyana').show();
+        $('#lyana').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#advices-trigger').click(function() {
         showHide();
-        $('#advices').show();
+        $('#advices').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#fairytale-trigger').click(function() {
         showHide();
-        $('#fairytale').show();
+        $('#fairytale').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#teaching-trigger').click(function() {
         showHide();
-        $('#teaching').show();
+        $('#teaching').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#esper-trigger').click(function() {
         showHide();
-        $('#esper').show();
+        $('#esper').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#ivanko-trigger').click(function() {
         showHide();
-        $('#ivanko').show();
+        $('#ivanko').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#caprise-trigger').click(function() {
         showHide();
-        $('#caprise').show();
+        $('#caprise').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#reload-trigger').click(function() {
         showHide();
-        $('#reload').show();
+        $('#reload').show().animate({
+            right: rightShift
+        },800);
     });
     $('#capitalist-trigger').click(function() {
         showHide();
-        $('#capitalist').show();
+        $('#capitalist').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#dreamers-trigger').click(function() {
         showHide();
-        $('#dreamers').show();
+        $('#dreamers').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#maze-trigger').click(function() {
         showHide();
-        $('#maze').show();
+        $('#maze').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#house-trigger').click(function() {
         showHide();
-        $('#house').show();
+        $('#house').show().animate({
+            right: rightShift
+        },800);
     });
 
     $('#hero-trigger').click(function() {
         showHide();
-        $('#hero').show();
+        $('#hero').show().animate({
+            right: rightShift
+        },800);
     });
 
     //open-close feedback-popup
