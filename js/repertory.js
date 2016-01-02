@@ -12,7 +12,7 @@ $(document).ready(function() {
     //Close-animate show window
     $('.show__close-btn').click(function(){
        $('.show').animate({
-           right: -160
+           right: -230
        },500);
     });
 
@@ -29,14 +29,14 @@ $(document).ready(function() {
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 160
+            right: 230
         },500);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 160
+            right: 230
         },500);
     });
 
