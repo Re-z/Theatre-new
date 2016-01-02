@@ -357,6 +357,7 @@ body {
 
 .show {
   display: none;
+  padding: 0 5px 0 5px;
   @media #{$tel} {
     position: absolute;
     z-index: 100;
@@ -373,6 +374,7 @@ body {
     width: 320px;
     border: 2px solid;
     background: white;
+    box-shadow: 0 2px 20px .5px black;
   }
   &:first-of-type {
   display: block;
@@ -390,7 +392,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background: url('../img/feedback-close-about.png') center;
+    background: url('../img/feedback-close-repertory.png') center;
     cursor: pointer;
     @media #{$xsTel} {
       display: block;
