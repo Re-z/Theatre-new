@@ -441,26 +441,30 @@ body {
 /* line 333, ../sass/repertory.scss */
 .show {
   display: none;
-  transition: right 1s;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 333, ../sass/repertory.scss */
   .show {
     position: absolute;
     z-index: 100;
-    right: -150px;
+    right: -230px;
     width: 300px;
     border: 2px solid;
     background: white;
   }
 }
 /* line 344, ../sass/repertory.scss */
+.show:first-of-type {
+  display: block;
+  right: 128px;
+}
+/* line 348, ../sass/repertory.scss */
 .show :after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 349, ../sass/repertory.scss */
+/* line 353, ../sass/repertory.scss */
 .show__close-btn {
   width: 30px;
   height: 30px;
@@ -470,7 +474,7 @@ body {
   background: url("../img/feedback-close-about.png") center;
   cursor: pointer;
 }
-/* line 358, ../sass/repertory.scss */
+/* line 362, ../sass/repertory.scss */
 .show__title {
   font-size: 30px;
   font-weight: bold;
@@ -480,13 +484,13 @@ body {
   text-align: right;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 358, ../sass/repertory.scss */
+  /* line 362, ../sass/repertory.scss */
   .show__title {
     font-size: 25px;
     margin-bottom: 10px;
   }
 }
-/* line 370, ../sass/repertory.scss */
+/* line 374, ../sass/repertory.scss */
 .show__img {
   width: 100%;
   max-width: 100%;
@@ -494,7 +498,7 @@ body {
   box-shadow: 0 0 5px #ccc;
   box-sizing: border-box;
 }
-/* line 376, ../sass/repertory.scss */
+/* line 380, ../sass/repertory.scss */
 .show__img_vertical {
   width: auto;
   max-width: 60%;
@@ -504,28 +508,23 @@ body {
   box-sizing: border-box;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 376, ../sass/repertory.scss */
+  /* line 380, ../sass/repertory.scss */
   .show__img_vertical {
     float: none;
     max-width: 100%;
   }
 }
-/* line 389, ../sass/repertory.scss */
+/* line 393, ../sass/repertory.scss */
 .show__text {
   font-size: 19px;
   line-height: 30px;
   margin-top: 15px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 389, ../sass/repertory.scss */
+  /* line 393, ../sass/repertory.scss */
   .show__text {
     padding: 0 10px;
   }
-}
-/* line 397, ../sass/repertory.scss */
-.show__active {
-  display: block;
-  right: 150px;
 }
 
 /* line 403, ../sass/repertory.scss */

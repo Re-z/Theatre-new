@@ -332,15 +332,19 @@ body {
 
 .show {
   display: none;
-  transition: right 1s;
+
   @media #{$tel} {
     position: absolute;
     z-index: 100;
     right: -230px;
-    width: 320px;
+    width: 300px;
     border: 2px solid;
     background: white;
   }
+  &:first-of-type {
+  display: block;
+  right: 128px;
+}
   :after {
     content: '';
     display: table;
@@ -393,10 +397,6 @@ body {
     @media #{$tel} {
       padding: 0 10px;
     }
-  }
-  &__active {
-    display: block;
-    right: 150px;
   }
 }
 

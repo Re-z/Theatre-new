@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('.show__close-btn').click(function(){
        $('.show').animate({
            right: -230
-       },500);
+       },800);
     });
 
     //Open-close show-window
@@ -29,15 +29,15 @@ $(document).ready(function() {
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 230
-        },500);
+            right: 128
+        },800);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 230
-        },500);
+            right: 128
+        },800);
     });
 
     $('#advantures-trigger').click(function() {
