@@ -448,7 +448,7 @@ body {
     position: absolute;
     z-index: 100;
     right: -230px;
-    width: 300px;
+    width: 320px;
     border: 2px solid;
     background: white;
   }
@@ -456,7 +456,7 @@ body {
 /* line 344, ../sass/repertory.scss */
 .show:first-of-type {
   display: block;
-  right: 128px;
+  right: 120px;
 }
 /* line 348, ../sass/repertory.scss */
 .show :after {

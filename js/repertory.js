@@ -23,20 +23,22 @@ $(document).ready(function() {
 
     $('#lake-trigger').click(function() {
         showHide();
-        $('#lake').show();
+        $('#lake').show().animate({
+            right: 120
+        },800);
     });
 
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 128
+            right: 120
         },800);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 128
+            right: 120
         },800);
     });
 
