@@ -8,10 +8,19 @@ $(document).ready(function() {
         $('.for-young__item').siblings().removeClass('active');
         $(this).siblings().removeClass('active').end().addClass('active');
     });
+
+    //Close-animate show window
+    $('.show__close-btn').click(function(){
+       $('.show').animate({
+           right: -150
+       },500);
+    });
+    
     //Open-close show-window
     function showHide() {
         $('.shows__description .show').hide()
     }
+
     $('#lake-trigger').click(function() {
         showHide();
         $('#lake').show();
@@ -19,12 +28,16 @@ $(document).ready(function() {
 
     $('#trap-trigger').click(function() {
         showHide();
-        $('#trap').show();
+        $('#trap').show().animate({
+            right: 150
+        },500);
     });
 
     $('#child-trigger').click(function() {
         showHide();
-        $('#child').show();
+        $('#child').show().animate({
+            right: 150
+        },500);
     });
 
     $('#advantures-trigger').click(function() {

@@ -346,6 +346,15 @@ body {
     display: table;
     clear: both;
   }
+  &__close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/feedback-close-about.png') center;
+    cursor: pointer;
+  }
   &__title {
     font-size: 30px;
     font-weight: bold;
