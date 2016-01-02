@@ -6,8 +6,8 @@ $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #51B3B6;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
-$tel: "(min-width: 320px) and (max-width: 767px)";
-$smallTel: "(min-width: 300px) and (max-width: 500px)";
+$tel: "(min-width: 501px) and (max-width: 767px)";
+$xsTel: "(min-width: 300px) and (max-width: 500px)";
 
 // declare mixins
 @mixin out {
@@ -46,6 +46,9 @@ body {
   @media #{$tel} {
     display: flex;
   }
+  @media #{$xsTel} {
+    display: flex;
+  }
   &_pressed {
     background-color: $headerBorder;
   }
@@ -62,10 +65,17 @@ body {
   @media #{$tel} {
     display: none;
   }
+  @media #{$xsTel} {
+    display: none;
+  }
   &__item {
     display: inline-block;
     border-left: 2px solid white;
     @media #{$tel} {
+      display: block;
+      border: none;
+    }
+    @media #{$xsTel} {
       display: block;
       border: none;
     }
@@ -84,6 +94,10 @@ body {
       padding: 15px 0;
       width: 100%;
     }
+    @media #{$xsTel} {
+      padding: 10px 0;
+      width: 100%;
+    }
     &:hover {
       background-color: $headerBorder;
     }
@@ -92,7 +106,7 @@ body {
 .lang-switch {
   display: flex;
   justify-content: space-between;
-  width: 100px;//mbd
+  width: 100px;
   height: 50px;
   position: absolute;
   right: 0;
@@ -181,7 +195,12 @@ body {
     margin-left: -200px;
     padding: 20px 15px 15px 10px;
     box-shadow: 0 2px 20px .5px black;
+    box-sizing: border-box;
     @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
+    @media #{$xsTel} {
       width: 300px;
       margin-left: -150px;
     }
@@ -226,6 +245,9 @@ body {
     padding: 5px 30px;
     cursor: pointer;
     @media #{$tel} {
+      bottom: 6%;
+    }
+    @media #{$xsTel} {
       bottom: 6%;
     }
     &:focus {
@@ -277,14 +299,18 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
     @media #{$tablet} {
       width: auto;
       padding: 0 25px 0 15px;
     }
     @media #{$tel} {
       width: auto;
-      overflow: hidden;
       padding: 0 20px 0 15px;
+    }
+    @media #{$xsTel} {
+      width: auto;
+      padding-bottom: 20px;
     }
   }
   &__list {
@@ -327,13 +353,20 @@ body {
   background: $mainColor;
   color: white;
   width: 200px;
-
 }
 
 .show {
   display: none;
-
   @media #{$tel} {
+    position: absolute;
+    z-index: 100;
+    right: -230px;
+    width: 320px;
+    border: 2px solid;
+    background: white;
+  }
+
+  @media #{$xsTel} {
     position: absolute;
     z-index: 100;
     right: -230px;
@@ -343,7 +376,7 @@ body {
   }
   &:first-of-type {
   display: block;
-  right: 120px;
+  right: 103px;
 }
   :after {
     content: '';
@@ -351,6 +384,7 @@ body {
     clear: both;
   }
   &__close-btn {
+    display: none;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -358,6 +392,9 @@ body {
     top: 0;
     background: url('../img/feedback-close-about.png') center;
     cursor: pointer;
+    @media #{$xsTel} {
+      display: block;
+    }
   }
   &__title {
     font-size: 30px;
@@ -369,6 +406,11 @@ body {
     @media #{$tel} {
       font-size: 25px;
       margin-bottom: 10px;
+    }
+    @media #{$xsTel} {
+      font-size: 25px;
+      margin-bottom: 10px;
+      margin-left: -5px;
     }
   }
   &__img {
@@ -388,6 +430,10 @@ body {
         float: none;
         max-width: 100%;
       }
+      @media #{$xsTel} {
+        float: none;
+        max-width: 100%;
+      }
     }
   }
   &__text {
@@ -395,6 +441,9 @@ body {
     line-height: 30px;
     margin-top: 15px;
     @media #{$tel} {
+      padding: 0 10px;
+    }
+    @media #{$xsTel} {
       padding: 0 10px;
     }
   }

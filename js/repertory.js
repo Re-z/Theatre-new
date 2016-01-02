@@ -24,21 +24,21 @@ $(document).ready(function() {
     $('#lake-trigger').click(function() {
         showHide();
         $('#lake').show().animate({
-            right: 120
+            right: 103
         },800);
     });
 
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 120
+            right: 103
         },800);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 120
+            right: 103
         },800);
     });
 
