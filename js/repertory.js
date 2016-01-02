@@ -12,10 +12,10 @@ $(document).ready(function() {
     //Close-animate show window
     $('.show__close-btn').click(function(){
        $('.show').animate({
-           right: -150
+           right: -160
        },500);
     });
-    
+
     //Open-close show-window
     function showHide() {
         $('.shows__description .show').hide()
@@ -29,14 +29,14 @@ $(document).ready(function() {
     $('#trap-trigger').click(function() {
         showHide();
         $('#trap').show().animate({
-            right: 150
+            right: 160
         },500);
     });
 
     $('#child-trigger').click(function() {
         showHide();
         $('#child').show().animate({
-            right: 150
+            right: 160
         },500);
     });
 
