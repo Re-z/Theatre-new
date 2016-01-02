@@ -16,7 +16,7 @@ $(document).ready(function() {
        },800);
     });
 
-    var rightShift = 110;
+    var rightShift = 100;
 
     //Open-close show-window
     function showHide() {

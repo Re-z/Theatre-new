@@ -6,8 +6,8 @@ $footerBg: #E9EDF0;
 $headerBorder: darken($headerBg, 5%);
 $mainColor: #51B3B6;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
-$tel: "(min-width: 501px) and (max-width: 767px)";
-$xsTel: "(min-width: 300px) and (max-width: 500px)";
+$tel: "(min-width: 550px) and (max-width: 767px)";
+$xsTel: "(min-width: 300px) and (max-width: 549px)";
 
 // declare mixins
 @mixin out {
@@ -299,7 +299,6 @@ body {
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
-    @include out3;
 
     @media #{$tablet} {
       width: auto;
@@ -318,14 +317,17 @@ body {
   &__list {
     width: 30%;
     min-width: 200px;
-    @include out2;
+    @media #{$tel} {
+      flex: 1;
+    }
   }
   &__description {
-    width: 69%;
+    width: 70%;
     max-width: 100%;
     box-sizing: border-box;
-    @include out;
-
+    @media #{$tel} {
+      flex: 2;
+    }
     @media #{$xsTel} {
       position: absolute;
     }
@@ -368,7 +370,6 @@ body {
   padding: 10px 5px 5px 5px;
   @media #{$tel} {
   }
-
   @media #{$xsTel} {
     position: absolute;
     z-index: 100;
@@ -380,7 +381,7 @@ body {
   }
   &:first-of-type {
   display: block;
-  right: 110px;
+  right: 100px;
 }
   :after {
     content: '';
