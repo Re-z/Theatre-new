@@ -12,6 +12,8 @@ $headerBorder: darken($headerBg, 5%);
 $mainColor: #6EB64A;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $tel: "(min-width: 320px) and (max-width: 767px)";
+$xsTel: "(min-width: 300px) and (max-width: 549px)";
+
 // declare mixins
 @mixin out {
   outline: 1px solid red;
@@ -188,7 +190,12 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     margin-left: -200px;
     padding: 20px 15px 15px 10px;
     box-shadow: 0 2px 20px .5px black;
+    box-sizing: border-box;
     @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
+    @media #{$xsTel} {
       width: 300px;
       margin-left: -150px;
     }
@@ -204,8 +211,14 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     margin-top: 10px;
     font-size: 19px;
     font-style: italic;
+    @media #{$tel} {
+      margin-top: 5px;
+    }
     &:first-of-type {
       margin-top: 20px;
+      @media #{$tel} {
+        margin-top: 10px;
+      }
     }
     &:focus {
       outline: 1px $mainColor solid;
@@ -233,6 +246,9 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     padding: 5px 30px;
     cursor: pointer;
     @media #{$tel} {
+      bottom: 6%;
+    }
+    @media #{$xsTel} {
       bottom: 6%;
     }
     &:focus {

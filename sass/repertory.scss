@@ -216,8 +216,14 @@ body {
     margin-top: 10px;
     font-size: 19px;
     font-style: italic;
+    @media #{$tel} {
+      margin-top: 5px;
+    }
     &:first-of-type {
       margin-top: 20px;
+      @media #{$tel} {
+        margin-top: 10px;
+      }
     }
     &:focus {
       outline: 1px $mainColor solid;

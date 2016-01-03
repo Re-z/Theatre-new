@@ -7,6 +7,7 @@ $headerBorder: darken($headerBg, 5%);
 $mainColor: #787697;
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $tel: "(min-width: 320px) and (max-width: 767px)";
+$xsTel: "(min-width: 300px) and (max-width: 549px)";
 
 // declare mixins
 @mixin out {
@@ -180,7 +181,12 @@ body {
     margin-left: -200px;
     padding: 20px 15px 15px 10px;
     box-shadow: 0 2px 20px .5px black;
+    box-sizing: border-box;
     @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
+    @media #{$xsTel} {
       width: 300px;
       margin-left: -150px;
     }
@@ -196,8 +202,14 @@ body {
     margin-top: 10px;
     font-size: 19px;
     font-style: italic;
+    @media #{$tel} {
+      margin-top: 5px;
+    }
     &:first-of-type {
       margin-top: 20px;
+      @media #{$tel} {
+        margin-top: 10px;
+      }
     }
     &:focus {
       outline: 1px $mainColor solid;
@@ -225,6 +237,9 @@ body {
     padding: 5px 30px;
     cursor: pointer;
     @media #{$tel} {
+      bottom: 6%;
+    }
+    @media #{$xsTel} {
       bottom: 6%;
     }
     &:focus {
@@ -262,11 +277,11 @@ body {
     margin: 0 auto;
     @media #{$tablet} {
       width: auto;
-      padding: 0 25px 0 25px;
+      padding: 0 20px 0 15px;
     }
     @media #{$tel} {
       width: auto;
-      padding: 0 20px 0 20px;
+      padding: 0 15px 0 10px;
     }
   }
   &__title {
@@ -287,12 +302,12 @@ body {
   justify-content: center;
   @media #{$tablet} {
     flex-wrap: wrap;
-    padding: 0 25px 0 25px;
+    padding: 0 20px 0 15px;
     margin-top: 15px;
   }
   @media #{$tel} {
     flex-wrap: wrap;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 10px;
     margin-top: 15px;
   }
   &__inner {
