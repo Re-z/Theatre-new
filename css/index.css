@@ -453,10 +453,11 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
 /* line 322, ../sass/index.scss */
 .actual__article-text {
   font-size: 19px;
+  line-height: 30px;
   padding: 0 15px 10px 15px;
 }
 
-/* line 329, ../sass/index.scss */
+/* line 330, ../sass/index.scss */
 .main-footer {
   background: #E9EDF0;
   border-top: 3px solid #dae1e6;
@@ -465,33 +466,33 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   padding-top: 18px;
 }
 
-/* line 336, ../sass/index.scss */
+/* line 337, ../sass/index.scss */
 .footer-nav {
   list-style: none;
   text-align: center;
   font-size: 0;
 }
-/* line 340, ../sass/index.scss */
+/* line 341, ../sass/index.scss */
 .footer-nav__item {
   display: inline-block;
   margin-right: 20px;
   font-weight: bold;
 }
-/* line 345, ../sass/index.scss */
+/* line 346, ../sass/index.scss */
 .footer-nav__link {
   font-size: 16px;
   color: black;
   text-transform: lowercase;
 }
 
-/* line 351, ../sass/index.scss */
+/* line 352, ../sass/index.scss */
 .copyrights {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
 }
-/* line 356, ../sass/index.scss */
+/* line 357, ../sass/index.scss */
 .copyrights__img {
   background-image: url("../img/logo-small.png");
   width: 33px;
