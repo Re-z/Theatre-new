@@ -1501,6 +1501,7 @@ if (typeof Object.create !== "function") {
 
 
 $(document).ready(function() {
+
 //Owl carousel user config
 
     $("#owl-demo").owlCarousel({
@@ -1531,7 +1532,16 @@ $(document).ready(function() {
         $(this).toggleClass('menu-burger_pressed')
     });
 
+    //remove animations on small devices
+
+    if($(window).width() < 768) {
+        $('.actual__article').removeClass('wow animated');
+    }
+
+
+
 });
+
 
 
 

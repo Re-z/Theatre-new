@@ -7,8 +7,11 @@
     <meta name="description" content="Киевский театр Вояж-Престиж. Профессиональные актеры, звуковое сопровождение, оригинальные декорации"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/about.css"/>
+    <link rel="stylesheet" href="../css/animate.css"/>
     <link rel="icon" type="image/png" href="../img/favicon.png">
+    <!--[if lt IE 9]>
     <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+    <![endif]-->
     <link href='https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="../css/bxslider.css" rel="stylesheet" />
 </head>
@@ -19,11 +22,13 @@
         <span class="menu-burger__strip"></span>
         <span class="menu-burger__strip"></span>
     </div>
-    <ul class="nav">
-        <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
-        <li class="nav__item"><a class="nav__link" href="repertory.html">Репертуар</a></li>
-    </ul>
+    <nav>
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="repertory.html">Репертуар</a></li>
+        </ul>
+    </nav>
     <div class="lang-switch">
         <div class="lang-switch__ua">
             <a class="lang-switch__ua-link" href="#"></a>
@@ -87,7 +92,7 @@
                 <li class="we-offer__services-item">Народный театр.</li>
             </ul>
         </div>
-        <div class="slider">
+        <div class="slider wow animated fadeInRight">
             <ul class="bxslider">
                 <li><img src="../img/photo/about/1.JPG" /></li>
                 <li><img src="../img/photo/about/2.JPG" /></li>
@@ -103,7 +108,7 @@
     </section>
 
     <section class="why-us">
-        <iframe class="why-us__video" src="https://www.youtube.com/embed/iao-l4USKEU" frameborder="0" allowfullscreen></iframe>
+        <iframe class="why-us__video wow animated fadeInLeft" src="https://www.youtube.com/embed/iao-l4USKEU" frameborder="0" allowfullscreen></iframe>
         <div class="why-us__inner">
             <h4 class="why-us__title">На сегодняшний день театр "Вояж-Престиж" это:</h4>
             <ul class="why-us__list">
@@ -117,9 +122,9 @@
 </main>
 <footer class="main-footer">
     <ul class="footer-nav">
-        <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Главная</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="pages/about.html">О нас</a></li>
-        <li class="footer-nav__item"><a class="footer-nav__link" href="pages/repertory.html">Репертуар</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="../index.html">Главная</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="about.html">О нас</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="repertory.html">Репертуар</a></li>
     </ul>
     <div class="copyrights">
         <p class="copyrights__text">Киевский театр "Вояж-Престиж"</p>
@@ -128,8 +133,9 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../js/about.js"></script>
+<script src="../js/wow.js"></script>
 <script>
-
+    new WOW().init();
 </script>
 </body>
 </html>

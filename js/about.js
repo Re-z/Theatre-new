@@ -1335,6 +1335,7 @@
 })(jQuery);
 
 //Bxslider config
+
 $('.bxslider').bxSlider({
 	controls: true,
 	pager: false
@@ -1342,6 +1343,7 @@ $('.bxslider').bxSlider({
 
 
 //open-close feedback-popup
+
 $(document).ready(function(){
 	$('.feedback__trigger').click(function() {
 		$('.feedback').fadeIn();
@@ -1351,10 +1353,18 @@ $(document).ready(function(){
 	});
 
 	//adaptive menu
+
 	$('.menu-burger').click(function(){
 		$('ul.nav').slideToggle();
 		$(this).toggleClass('menu-burger_pressed')
 	});
+
+	//remove animation on small devices
+
+	if($(window).width() < 768) {
+		$('.slider').removeClass('wow animated');
+		$('.why-us__video').removeClass('wow animated');
+	}
 
 });
 
