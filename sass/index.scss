@@ -1,7 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+//this scss file do not have vendor prefixes, they were added to compiled css file
 
 @import "compass/reset";
 
@@ -15,24 +12,18 @@ $tel: "(min-width: 320px) and (max-width: 767px)";
 $xsTel: "(min-width: 300px) and (max-width: 549px)";
 
 // declare mixins
-@mixin out {
-  outline: 1px solid red;
-}
-@mixin out2 {
-  outline: 1px solid blue;
-}
-@mixin out3 {
-  outline: 1px solid black;
-}
 @mixin mainFont {
   font-family: 'Neucha', cursive;
 }
-
+@mixin sprite($x, $y) {
+  background-image: url('../img/sprite.png');
+  background-position: $x $y;
+}
 body {
   @include mainFont;
   background: url("../img/WhiteBg1.jpg") repeat;
 }
-p::selection, a::selection, h1::selection, h2::selection, h3::selection, button {
+*::selection{
   background: $mainColor;
   color: white;
 }
@@ -113,7 +104,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     &-link {
       width: 30px;
       height: 30px;
-      background: url("../img/ua-ico.png")no-repeat;
+      @include sprite(-10px, -296px);
       display: block;
     }
   }
@@ -121,7 +112,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     @extend .lang-switch__ua;
     &-link {
       @extend .lang-switch__ua-link;
-      background: url("../img/rus-ico.png")no-repeat;
+      @include sprite(-130px, -268px);
     }
   }
   &__text a {
@@ -133,7 +124,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
 .logo {
   width: 200px;
   height: 219px;
-  background: url("../img/logo-main.png");
+  @include sprite(-10px, 0);
   margin: 0 auto;
 }
 .main-title {
@@ -162,7 +153,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   &__ico {
     width: 30px;
     height: 30px;
-    background: url("../img/tel.png");
+    @include sprite(-170px, -268px);
   }
   &__number {
     color: $mainColor;
@@ -204,6 +195,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     font-size: 19px;
     font-weight: bold;
     line-height: 25px;
+    margin-right: 20px;
   }
   &__input-text {
     width: 100%;
@@ -235,15 +227,12 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
     position: absolute;
     right: 4%;
     bottom: 8%;
-    width: 30px;
-    height: 30px;
     background-color: $mainColor;
-    background-image: url("../img/check.png");
-    background-position: center;
+    @include sprite(-118px, -298px);
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 5px 30px;
+    padding: 5px 20px;
     cursor: pointer;
     @media #{$tel} {
       bottom: 6%;
@@ -258,8 +247,8 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   &__close {
     width: 30px;
     height: 30px;
-    background: url("../img/feedback-close-index.png") no-repeat;
     position: absolute;
+    @include sprite(-50px, -255px);
     right: 2%;
     top: 2%;
     cursor: pointer;
@@ -354,7 +343,7 @@ p::selection, a::selection, h1::selection, h2::selection, h3::selection, button 
   align-items: center;
   margin: 10px auto;
   &__img {
-    background-image: url("../img/logo-small.png");
+    @include sprite(-142px, -229px);
     width: 33px;
     height: 29px;
   }

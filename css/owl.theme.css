@@ -19,10 +19,12 @@
 	opacity: 0.5;
 	width: 38px;
 	height: 16px;
-	background: url("../img/arrows.png");
+	background: url("../img/sprite.png");
+    background-position: -10px -229px;
+
 }
 .owl-controls .owl-buttons div.owl-next {
-	background-position: 38px 0;
+	background-position: -93px -229px;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
