@@ -135,6 +135,20 @@ $(document).ready(function() {
         },800);
     });
 
+    $('#sheep-trigger').click(function() {
+        showHide();
+        $('#sheep').show().animate({
+            right: rightShift
+        },800);
+    });
+
+    $('#drum-trigger').click(function() {
+        showHide();
+        $('#drum').show().animate({
+            right: rightShift
+        },800);
+    });
+
     $('#reload-trigger').click(function() {
         showHide();
         $('#reload').show().animate({
@@ -172,6 +186,13 @@ $(document).ready(function() {
     $('#hero-trigger').click(function() {
         showHide();
         $('#hero').show().animate({
+            right: rightShift
+        },800);
+    });
+
+    $('#mykyta-trigger').click(function() {
+        showHide();
+        $('#mykyta').show().animate({
             right: rightShift
         },800);
     });

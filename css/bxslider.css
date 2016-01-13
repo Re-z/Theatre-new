@@ -114,11 +114,11 @@
 }
 
 .bx-wrapper .bx-prev:hover {
-	opacity: .8;
+	opacity: 1;
 }
 
 .bx-wrapper .bx-next:hover {
-	opacity: .8;
+	opacity: 1;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -137,7 +137,7 @@
 	text-align: center;
 	font-size: 30px;
 	line-height: 30px;
-	opacity: .4;
+	opacity: .8;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
