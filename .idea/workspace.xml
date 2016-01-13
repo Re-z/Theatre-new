@@ -40,8 +40,8 @@
           <file leaf-file-name="repertory_ukr.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/repertory_ukr.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="21.75" vertical-offset="4259" max-vertical-offset="5117">
-                  <caret line="208" column="52" selection-start-line="208" selection-start-column="52" selection-end-line="208" selection-end-column="52" />
+                <state vertical-scroll-proportion="2.4615386" vertical-offset="1743" max-vertical-offset="5117">
+                  <caret line="117" column="79" selection-start-line="117" selection-start-column="79" selection-end-line="117" selection-end-column="79" />
                   <folding>
                     <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="e#763#900#0" expanded="false" />
@@ -56,7 +56,7 @@
           <file leaf-file-name="repertory_rus.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/repertory_rus.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8811189" vertical-offset="3987" max-vertical-offset="4845">
+                <state vertical-scroll-proportion="3.6701632" vertical-offset="1594" max-vertical-offset="4845">
                   <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
                   <folding />
                 </state>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/css/bxslider.css" />
         <option value="$PROJECT_DIR$/js/repertory.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/pages/repertory_ukr.html" />
         <option value="$PROJECT_DIR$/pages/repertory_rus.html" />
+        <option value="$PROJECT_DIR$/pages/repertory_ukr.html" />
       </list>
     </option>
   </component>
@@ -698,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/repertory_ukr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.75" vertical-offset="4259" max-vertical-offset="5117">
-          <caret line="208" column="52" selection-start-line="208" selection-start-column="52" selection-end-line="208" selection-end-column="52" />
+        <state vertical-scroll-proportion="2.4615386" vertical-offset="1743" max-vertical-offset="5117">
+          <caret line="117" column="79" selection-start-line="117" selection-start-column="79" selection-end-line="117" selection-end-column="79" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#763#900#0" expanded="false" />
@@ -712,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/repertory_rus.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8811189" vertical-offset="3987" max-vertical-offset="4845">
+        <state vertical-scroll-proportion="3.6701632" vertical-offset="1594" max-vertical-offset="4845">
           <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
           <folding />
         </state>
