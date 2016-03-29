@@ -1,0 +1,412 @@
+//this scss file do not have vendor prefixes, they were added to compiled css file
+
+@import "compass/reset";
+
+//declare variables
+$headerBg: #E9EDF0;
+$footerBg: #E9EDF0;
+$headerBorder: darken($headerBg, 5%);
+$mainColor: #787697;
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$tel: "(min-width: 320px) and (max-width: 767px)";
+$xsTel: "(min-width: 300px) and (max-width: 549px)";
+
+// declare mixins
+
+@mixin mainFont {
+  font-family: 'Neucha', cursive;
+}
+@mixin sprite($x, $y) {
+  background-image: url('../img/sprite.png');
+  background-position: $x $y;
+}
+*::selection{
+  background: $mainColor;
+  color: white;
+}
+body {
+  @include mainFont;
+  background: url("../img/WhiteBg1.jpg") repeat;
+}
+.header {
+  position: relative;
+  background: $headerBg;
+  border-bottom: 3px solid $headerBorder;
+}
+.menu-burger {
+  display: none;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  padding: 15px 10px 5px 10px;
+  justify-content: center;
+  cursor: pointer;
+  @media #{$tel} {
+    display: flex;
+  }
+  &_pressed {
+    background-color: $headerBorder;
+  }
+  &__strip {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+}
+.nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  @media #{$tel} {
+    display: none;
+  }
+  &__item {
+    display: inline-block;
+    border-left: 2px solid white;
+    @media #{$tel} {
+      display: block;
+      border: none;
+    }
+    &:last-of-type {
+      border-right: 2px solid white;
+    }
+  }
+  &__link {
+    padding: 15px 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline-block;
+    color: black;
+    @media #{$tel} {
+      padding: 15px 0;
+      width: 100%;
+    }
+    &:hover {
+      background-color: $headerBorder;
+    }
+  }
+}
+.lang-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;//mbd
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  &__ua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-link {
+      width: 30px;
+      height: 30px;
+      @include sprite(-10px, -296px);
+      display: block;
+    }
+  }
+  &__ru {
+    @extend .lang-switch__ua;
+    &-link {
+      @extend .lang-switch__ua-link;
+      @include sprite(-130px, -268px);
+    }
+  }
+  &__text a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+.logo {
+  width: 200px;
+  height: 219px;
+  @include sprite(-10px, 0);
+  margin: 0 auto;
+}
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.contacts {
+  margin-top: 25px;
+  &-box {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media  screen and ('max-width: 1024px') {
+      width: auto;
+    }
+  }
+}
+.tel {
+  width: 150px;//mbd
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__ico {
+    width: 30px;
+    height: 30px;
+    @include sprite(-50px, -295px);
+  }
+  &__number {
+    color: $mainColor;
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+.feedback {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(211,211,211, .7);
+  &__inner {
+    width: 400px;
+    background: lightgoldenrodyellow;
+    position:fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -200px;
+    padding: 20px 15px 15px 10px;
+    box-shadow: 0 2px 20px .5px black;
+    box-sizing: border-box;
+    @media #{$tel} {
+      width: 300px;
+      margin-left: -150px;
+    }
+    @media #{$xsTel} {
+      width: 300px;
+      margin-left: -150px;
+    }
+  }
+  &__title {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-right: 20px;
+  }
+  &__input-text {
+    width: 100%;
+    font-family: Neucha,cursive;
+    margin-top: 10px;
+    font-size: 19px;
+    font-style: italic;
+    @media #{$tel} {
+      margin-top: 5px;
+    }
+    &:first-of-type {
+      margin-top: 20px;
+      @media #{$tel} {
+        margin-top: 10px;
+      }
+    }
+    &:focus {
+      outline: 1px $mainColor solid;
+    }
+  }
+  &__textarea {
+    @extend .feedback__input-text;
+    resize: none;
+    &:focus {
+      @extend .feedback__input-text:focus;
+    }
+  }
+  &__submit {
+    position: absolute;
+    right: 4%;
+    bottom: 8%;
+    background-color: $mainColor;
+    @include sprite(-118px, -298px);
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    @media #{$tel} {
+      bottom: 6%;
+    }
+    @media #{$xsTel} {
+      bottom: 6%;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__close {
+    width: 30px;
+    height: 30px;
+    @include sprite(-10px, -255px);
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+  }
+  &__trigger {
+    width: 160px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    background: $mainColor;
+    border-radius: 20px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.about {
+  margin-top: 25px;
+  &__inner {
+    width: 1024px;
+    margin: 0 auto;
+    @media #{$tablet} {
+      width: auto;
+      padding: 0 20px 0 15px;
+    }
+    @media #{$tel} {
+      width: auto;
+      padding: 0 15px 0 10px;
+    }
+  }
+  &__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 19px;
+    text-align: justify;
+    line-height: 30px;
+  }
+}
+.we-offer {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  @media #{$tablet} {
+    flex-wrap: wrap;
+    padding: 0 20px 0 15px;
+    margin-top: 15px;
+  }
+  @media #{$tel} {
+    flex-wrap: wrap;
+    padding: 0 15px 0 10px;
+    margin-top: 15px;
+  }
+  &__inner {
+    width: 512px;
+    @media #{$tablet} {
+      width: 650px;
+      order: 2;
+      margin-top: 20px;
+    }
+    @media #{$tel} {
+      width: 450px;
+      order: 2;
+      margin-top: 20px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    color: $mainColor;
+    font-weight: bold;
+  }
+  &__services {
+    list-style: circle;
+    list-style-position: inside;
+    margin-top: 15px;
+    &-item {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+}
+.slider {
+  width: 512px;
+  @media #{$tablet} {
+    width: 650px;
+    order: 1;
+  }
+  @media #{$tel} {
+    width: 100%;
+    order: 1;
+  }
+}
+.why-us {
+  @extend .we-offer;
+  &__inner {
+    @extend .we-offer__inner;
+    padding-left: 30px;
+    @media #{$tablet} {
+      padding: 0;
+    }
+    @media #{$tel} {
+      padding: 0;
+    }
+  }
+  &__video {
+    width: 512px;
+    height: 351px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #ccc;
+    @media #{$tablet} {
+      width: 650px;
+      height: 450px;
+    }
+  }
+  &__title {
+    @extend .we-offer__title;
+  }
+  &__list {
+    @extend .we-offer__services;
+    &-item {
+      @extend .we-offer__services-item;
+    }
+  }
+}
+.main-footer {
+  background: $footerBg;
+  border-top: 3px solid $headerBorder;
+  height: 70px;//mbd
+  margin-top: 70px;
+  padding-top: 18px;
+}
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  &__link {
+    font-size: 16px;
+    color: black;
+    text-transform: lowercase;
+  }
+}
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  &__img {
+    @include sprite(-142px, -229px);
+    width: 33px;
+    height: 29px;
+  }
+}

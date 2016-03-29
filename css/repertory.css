@@ -1,0 +1,749 @@
+/* line 5, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 24, ../sass/repertory.scss */
+*::-moz-selection {
+  background: #51B3B6;
+  color: white;
+}
+*::selection {
+  background: #51B3B6;
+  color: white;
+}
+
+/* line 28, ../sass/repertory.scss */
+body {
+  font-family: 'Neucha', cursive;
+  background: url("../img/WhiteBg1.jpg") repeat;
+}
+
+/* line 32, ../sass/repertory.scss */
+.header {
+  position: relative;
+  background: #E9EDF0;
+  border-bottom: 3px solid #dae1e6;
+}
+
+/* line 37, ../sass/repertory.scss */
+.menu-burger {
+  display: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  padding: 15px 10px 5px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 37, ../sass/repertory.scss */
+  .menu-burger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 37, ../sass/repertory.scss */
+  .menu-burger {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/* line 51, ../sass/repertory.scss */
+.menu-burger_pressed {
+  background-color: #dae1e6;
+}
+/* line 54, ../sass/repertory.scss */
+.menu-burger__strip {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+/* line 60, ../sass/repertory.scss */
+.nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 60, ../sass/repertory.scss */
+  .nav {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 60, ../sass/repertory.scss */
+  .nav {
+    display: none;
+  }
+}
+/* line 70, ../sass/repertory.scss */
+.nav__item {
+  display: inline-block;
+  border-left: 2px solid white;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 70, ../sass/repertory.scss */
+  .nav__item {
+    display: block;
+    border: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 70, ../sass/repertory.scss */
+  .nav__item {
+    display: block;
+    border: none;
+  }
+}
+/* line 81, ../sass/repertory.scss */
+.nav__item:last-of-type {
+  border-right: 2px solid white;
+}
+/* line 85, ../sass/repertory.scss */
+.nav__link {
+  padding: 15px 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 19px;
+  display: inline-block;
+  color: black;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 85, ../sass/repertory.scss */
+  .nav__link {
+    padding: 15px 0;
+    width: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 85, ../sass/repertory.scss */
+  .nav__link {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+/* line 100, ../sass/repertory.scss */
+.nav__link:hover {
+  background-color: #dae1e6;
+}
+
+/* line 105, ../sass/repertory.scss */
+.lang-switch {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 113, ../sass/repertory.scss */
+.lang-switch__ua, .lang-switch__ru {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* line 117, ../sass/repertory.scss */
+.lang-switch__ua-link, .lang-switch__ru-link {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px -296px;
+  display: block;
+}
+/* line 126, ../sass/repertory.scss */
+.lang-switch__ru-link {
+  background-image: url("../img/sprite.png");
+  background-position: -130px -268px;
+}
+/* line 132, ../sass/repertory.scss */
+.lang-switch__text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* line 138, ../sass/repertory.scss */
+.logo {
+  width: 200px;
+  height: 219px;
+  background-image: url("../img/sprite.png");
+  background-position: -10px 0;
+  margin: 0 auto;
+}
+
+/* line 144, ../sass/repertory.scss */
+.main-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 149, ../sass/repertory.scss */
+.contacts {
+  margin-top: 25px;
+}
+/* line 151, ../sass/repertory.scss */
+.contacts-box {
+  width: 1024px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  /* line 151, ../sass/repertory.scss */
+  .contacts-box {
+    width: auto;
+  }
+}
+
+/* line 162, ../sass/repertory.scss */
+.tel {
+  width: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* line 167, ../sass/repertory.scss */
+.tel__ico {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: -89px -295px;
+}
+/* line 172, ../sass/repertory.scss */
+.tel__number {
+  color: #51B3B6;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* line 178, ../sass/repertory.scss */
+.feedback {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(211, 211, 211, 0.7);
+}
+/* line 187, ../sass/repertory.scss */
+.feedback__inner {
+  width: 400px;
+  background: lightgoldenrodyellow;
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -200px;
+  padding: 20px 15px 15px 10px;
+  box-shadow: 0 2px 20px .5px black;
+  box-sizing: border-box;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 187, ../sass/repertory.scss */
+  .feedback__inner {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 187, ../sass/repertory.scss */
+  .feedback__inner {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
+/* line 208, ../sass/repertory.scss */
+.feedback__title {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-right: 20px;
+}
+/* line 214, ../sass/repertory.scss */
+.feedback__input-text, .feedback__textarea {
+  width: 100%;
+  font-family: Neucha,cursive;
+  margin-top: 10px;
+  font-size: 19px;
+  font-style: italic;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 214, ../sass/repertory.scss */
+  .feedback__input-text, .feedback__textarea {
+    margin-top: 5px;
+  }
+}
+/* line 223, ../sass/repertory.scss */
+.feedback__input-text:first-of-type, .feedback__textarea:first-of-type {
+  margin-top: 20px;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 223, ../sass/repertory.scss */
+  .feedback__input-text:first-of-type, .feedback__textarea:first-of-type {
+    margin-top: 10px;
+  }
+}
+/* line 229, ../sass/repertory.scss */
+.feedback__input-text:focus, .feedback__textarea:focus {
+  outline: 1px #51B3B6 solid;
+}
+/* line 233, ../sass/repertory.scss */
+.feedback__textarea {
+  resize: none;
+}
+/* line 240, ../sass/repertory.scss */
+.feedback__submit {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  background-color: #51B3B6;
+  background-image: url("../img/sprite.png");
+  background-position: -118px -298px;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 240, ../sass/repertory.scss */
+  .feedback__submit {
+    bottom: 6%;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 240, ../sass/repertory.scss */
+  .feedback__submit {
+    bottom: 6%;
+  }
+}
+/* line 257, ../sass/repertory.scss */
+.feedback__submit:focus {
+  outline: none;
+}
+/* line 261, ../sass/repertory.scss */
+.feedback__close {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: -90px -255px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+/* line 270, ../sass/repertory.scss */
+.feedback__trigger {
+  width: 160px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  background: #51B3B6;
+  border-radius: 20px;
+}
+/* line 277, ../sass/repertory.scss */
+.feedback__trigger:focus {
+  outline: none;
+}
+/* line 280, ../sass/repertory.scss */
+.feedback__trigger:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 285, ../sass/repertory.scss */
+  .content {
+    padding: 0 25px 0 25px;
+  }
+}
+
+/* line 291, ../sass/repertory.scss */
+.shows {
+  margin-top: 25px;
+}
+/* line 293, ../sass/repertory.scss */
+.shows__title {
+  width: 100%;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #51B3B6;
+  font-weight: bold;
+}
+/* line 300, ../sass/repertory.scss */
+.shows__inner {
+  width: 1024px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 300, ../sass/repertory.scss */
+  .shows__inner {
+    width: auto;
+    padding: 0 25px 0 15px;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 300, ../sass/repertory.scss */
+  .shows__inner {
+    width: auto;
+    padding: 0 20px 0 15px;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 300, ../sass/repertory.scss */
+  .shows__inner {
+    width: auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+}
+/* line 321, ../sass/repertory.scss */
+.shows__list {
+  width: 30%;
+  min-width: 200px;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 321, ../sass/repertory.scss */
+  .shows__list {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+/* line 328, ../sass/repertory.scss */
+.shows__description {
+  width: 70%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 328, ../sass/repertory.scss */
+  .shows__description {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 328, ../sass/repertory.scss */
+  .shows__description {
+    position: absolute;
+  }
+}
+
+/* line 340, ../sass/repertory.scss */
+.for-young, .for-senior {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+/* line 343, ../sass/repertory.scss */
+.for-young__title, .for-senior__title {
+  font-size: 30px;
+  color: #51B3B6;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+/* line 349, ../sass/repertory.scss */
+.for-young__item, .for-senior__item {
+  font-size: 19px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+/* line 365, ../sass/repertory.scss */
+.active {
+  background: #51B3B6;
+  color: white;
+  width: 200px;
+}
+
+/* line 371, ../sass/repertory.scss */
+.show {
+  display: none;
+  box-sizing: border-box;
+  padding: 10px 5px 5px 5px;
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 371, ../sass/repertory.scss */
+  .show {
+    position: absolute;
+    z-index: 100;
+    right: -230px;
+    width: 320px;
+    border: 2px solid;
+    background: white;
+    box-shadow: 0 2px 20px .5px black;
+  }
+}
+/* line 386, ../sass/repertory.scss */
+.show:first-of-type {
+  display: block;
+  right: 100px;
+}
+/* line 390, ../sass/repertory.scss */
+.show :after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 395, ../sass/repertory.scss */
+.show__close-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  background: url("../img/feedback-close-repertory.png") center;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 395, ../sass/repertory.scss */
+  .show__close-btn {
+    display: block;
+  }
+}
+/* line 408, ../sass/repertory.scss */
+.show__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: right;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 408, ../sass/repertory.scss */
+  .show__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 408, ../sass/repertory.scss */
+  .show__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    text-indent: 15px;
+  }
+}
+/* line 426, ../sass/repertory.scss */
+.show__img {
+  width: 100%;
+  max-width: 100%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ccc;
+  box-sizing: border-box;
+}
+/* line 432, ../sass/repertory.scss */
+.show__img_vertical {
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 432, ../sass/repertory.scss */
+  .show__img_vertical {
+    float: none;
+    max-width: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 432, ../sass/repertory.scss */
+  .show__img_vertical {
+    float: none;
+    max-width: 100%;
+  }
+}
+/* line 449, ../sass/repertory.scss */
+.show__text {
+  font-size: 19px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  /* line 449, ../sass/repertory.scss */
+  .show__text {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  /* line 449, ../sass/repertory.scss */
+  .show__text {
+    padding: 0 10px;
+  }
+}
+
+/* line 462, ../sass/repertory.scss */
+.main-footer {
+  background: #E9EDF0;
+  border-top: 3px solid #dae1e6;
+  height: 70px;
+  margin-top: 70px;
+  padding-top: 18px;
+}
+
+/* line 469, ../sass/repertory.scss */
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+}
+/* line 473, ../sass/repertory.scss */
+.footer-nav__item {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+}
+/* line 478, ../sass/repertory.scss */
+.footer-nav__link {
+  font-size: 16px;
+  color: black;
+  text-transform: lowercase;
+}
+
+/* line 484, ../sass/repertory.scss */
+.copyrights {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px auto;
+}
+/* line 489, ../sass/repertory.scss */
+.copyrights__img {
+  background-image: url("../img/sprite.png");
+  background-position: -142px -229px;
+  width: 33px;
+  height: 29px;
+}
