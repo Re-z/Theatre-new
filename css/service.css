@@ -428,7 +428,9 @@ body {
     cursor: pointer;
 }
 
-
+main {
+    padding-bottom: 120px;
+}
 .service {
     margin-top: 25px;
 }
@@ -471,7 +473,7 @@ body {
     margin-top: 70px;
     padding-top: 18px;
     position: absolute;
-    bottom: 0;
+    bottom: -120px;
     left: 0;
     width: 100%;
 }

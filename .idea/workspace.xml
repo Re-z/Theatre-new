@@ -2,95 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139452fd-0cb6-4199-852c-764dc8c759ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/WhiteBg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bx_loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/feedback-close-about.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/feedback-close-index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/feedback-close-repertory.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo-main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/1.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/3.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/4.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/about/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/index/slide9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/advantures.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/blizzard.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/child.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/dontwant.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/drum.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/fairytale.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/fixic.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/lake.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/princess.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/sheep.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/teaching.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/trap.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/ulianka.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/photo/repertory/words.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rus-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tel-about.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tel-repertory.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ua-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contacts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/about.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bxslider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/owl.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/repertory.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/service.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/repertory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/wow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/about_rus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/about_ukr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contacts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index_rus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/repertory_rus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/repertory_ukr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/service_ukr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/about.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/repertory.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/langs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo-main.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/order-btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/show1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider-arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider-item1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/sprites.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logo-small.png" afterPath="$PROJECT_DIR$/img/logo-small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sprite.png" afterPath="$PROJECT_DIR$/img/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/service.css" afterPath="$PROJECT_DIR$/css/service.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/about_ukr.html" afterPath="$PROJECT_DIR$/pages/about_ukr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/repertory_ukr.html" afterPath="$PROJECT_DIR$/pages/repertory_ukr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/service_ukr.html" afterPath="$PROJECT_DIR$/pages/service_ukr.html" />
     </list>
     <ignored path="Theatre new.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,14 +26,24 @@
     <favorites_list name="Theatre new" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.7537448">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="about_ukr.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/about_ukr.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-14.384615">
-                  <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+                <state vertical-scroll-proportion="-7.923077">
+                  <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="repertory_ukr.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/repertory_ukr.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.4528303">
+                  <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
                   <folding />
                 </state>
               </provider>
@@ -126,8 +52,8 @@
           <file leaf-file-name="service_ukr.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/service_ukr.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6812428">
-                  <caret line="82" column="87" selection-start-line="82" selection-start-column="87" selection-end-line="82" selection-end-column="87" />
+                <state vertical-scroll-proportion="0.1328125">
+                  <caret line="7" column="128" selection-start-line="7" selection-start-column="128" selection-end-line="7" selection-end-column="128" />
                   <folding />
                 </state>
               </provider>
@@ -150,8 +76,8 @@
           <file leaf-file-name="service.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/service.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6375144">
-                  <caret line="475" column="16" selection-start-line="475" selection-start-column="16" selection-end-line="475" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.5742232">
+                  <caret line="454" column="0" selection-start-line="452" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -177,11 +103,12 @@
       <list>
         <option value="$PROJECT_DIR$/config.rb" />
         <option value="$PROJECT_DIR$/sass/screen.scss" />
+        <option value="$PROJECT_DIR$/css/about.css" />
+        <option value="$PROJECT_DIR$/css/service.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/about_ukr.html" />
-        <option value="$PROJECT_DIR$/css/about.css" />
+        <option value="$PROJECT_DIR$/pages/repertory_ukr.html" />
         <option value="$PROJECT_DIR$/pages/service_ukr.html" />
-        <option value="$PROJECT_DIR$/css/service.css" />
       </list>
     </option>
   </component>
@@ -252,20 +179,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Theatre new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Theatre-new" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,6 +309,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -406,33 +320,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36049107">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index_rus.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018973215">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/about_ukr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/service_ukr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6812428">
-          <caret line="82" column="87" selection-start-line="82" selection-start-column="87" selection-end-line="82" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -446,8 +337,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/service.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6375144">
-          <caret line="475" column="16" selection-start-line="475" selection-start-column="16" selection-end-line="475" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.5742232">
+          <caret line="454" column="0" selection-start-line="452" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38504463">
+          <caret line="125" column="77" selection-start-line="125" selection-start-column="77" selection-end-line="125" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/about_rus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.45283">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/about_ukr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.923077">
+          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/repertory_ukr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4528303">
+          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/service_ukr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1328125">
+          <caret line="7" column="128" selection-start-line="7" selection-start-column="128" selection-end-line="7" selection-end-column="128" />
           <folding />
         </state>
       </provider>
